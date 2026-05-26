@@ -1,8 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   line-height: normal;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
   /* Common Style Variables */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for horizontal scroll containers but allow scrolling */
+.div13::-webkit-scrollbar,
+.div14::-webkit-scrollbar,
+.container-parent11::-webkit-scrollbar,
+.campaign-data::-webkit-scrollbar,
+.client-photos::-webkit-scrollbar {
+  height: 8px;
+}
+
+.div13::-webkit-scrollbar-track,
+.div14::-webkit-scrollbar-track,
+.container-parent11::-webkit-scrollbar-track,
+.campaign-data::-webkit-scrollbar-track,
+.client-photos::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.div13::-webkit-scrollbar-thumb,
+.div14::-webkit-scrollbar-thumb,
+.container-parent11::-webkit-scrollbar-thumb,
+.campaign-data::-webkit-scrollbar-thumb,
+.client-photos::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.div13::-webkit-scrollbar-thumb:hover,
+.div14::-webkit-scrollbar-thumb:hover,
+.container-parent11::-webkit-scrollbar-thumb:hover,
+.campaign-data::-webkit-scrollbar-thumb:hover,
+.client-photos::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Prevent image dragging */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Ensure all images scale properly */
+img {
+  max-width: 100%;
+  height: auto;
 }
