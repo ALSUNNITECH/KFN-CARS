@@ -1,0 +1,14 @@
+{
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "license": "ISC",
+  "name": "my_projects_s_project",
+  "scripts": {
+    "start": "parcel ./*.html ",
+    "build": "parcel build ./*.html  --dist-dir ./build"
+  },
+  "version": "1.0.0"
+}
