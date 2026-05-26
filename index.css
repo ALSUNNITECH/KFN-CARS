@@ -1,17 +1,30 @@
+/* ==========================================
+   أنماط الصفحة الرئيسية - Main Page Styles
+   KFN CARS Landing Page
+   ========================================== */
+
+/* ==========================================
+   قسم الهيرو والصفحة الرئيسية
+   Hero Section & Main Container
+   ========================================== */
 .hero,
 .high-converting-landing-page {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
+/* حاوية الصفحة الرئيسية - منع التمرير الأفقي */
 .high-converting-landing-page {
   width: 100%;
+  max-width: 100vw; /* منع تجاوز عرض الشاشة */
   position: relative;
   background-color: #fff;
-  overflow-x: hidden;
+  overflow-x: hidden; /* منع التمرير الأفقي */
   line-height: normal;
   letter-spacing: normal;
 }
+/* قسم الهيرو - Hero Section */
 .hero {
   align-self: stretch;
   min-height: 899px;
@@ -22,6 +35,7 @@
   background-repeat: no-repeat;
   background-position: top;
   max-width: 100%;
+  width: 100%;
 }
 .icon {
   width: 100%;
@@ -32,6 +46,7 @@
   display: none;
   z-index: 1;
 }
+/* الحاوية الرئيسية مع التدرج اللوني */
 .container-parent {
   background:
     linear-gradient(
@@ -49,11 +64,13 @@
   gap: 42px;
   flex-shrink: 0;
   max-width: 100%;
+  width: 100%; /* ضمان عدم تجاوز العرض */
   z-index: 2;
 }
+/* شريط التنقل العلوي - Navigation Bar */
 .container {
   width: 100%;
-  max-width: 1534px;
+  max-width: 100%; /* منع تجاوز العرض */
   height: 80px;
   background: #000, #fff;
   align-items: center;
@@ -116,9 +133,10 @@
   max-height: 100%;
   object-fit: cover;
 }
+/* حاوية المحتوى الرئيسي */
 .container-wrapper {
   width: 100%;
-  max-width: 1534px;
+  max-width: 100%; /* منع تجاوز العرض */
   display: flex;
   align-items: flex-start;
   justify-content: center;
