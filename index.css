@@ -1,33 +1,33 @@
-/* ==========================================
-   أنماط الصفحة الرئيسية - Main Page Styles
-   KFN CARS Landing Page
-   ========================================== */
+/* ========================================== */
+/* إعدادات التمرير السلس ومنع التمرير الأفقي العام */
+/* ========================================== */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
 
-/* ==========================================
-   قسم الهيرو والصفحة الرئيسية
-   Hero Section & Main Container
-   ========================================== */
 .hero,
 .high-converting-landing-page {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
-/* حاوية الصفحة الرئيسية - منع التمرير الأفقي */
 .high-converting-landing-page {
   width: 100%;
-  max-width: 100vw; /* منع تجاوز عرض الشاشة */
+  min-height: 100vh;
+  height: auto;
   position: relative;
   background-color: #fff;
-  overflow-x: hidden; /* منع التمرير الأفقي */
+  overflow-x: hidden;
   line-height: normal;
   letter-spacing: normal;
 }
-/* قسم الهيرو - Hero Section */
 .hero {
   align-self: stretch;
-  min-height: 899px;
+  height: 899px;
   padding: 0;
   box-sizing: border-box;
   background-image: url(./public/1@2x.png);
@@ -35,18 +35,15 @@
   background-repeat: no-repeat;
   background-position: top;
   max-width: 100%;
-  width: 100%;
 }
 .icon {
-  width: 100%;
-  max-width: 1534px;
+  width: 1534px;
   height: 899px;
   position: relative;
   object-fit: cover;
   display: none;
   z-index: 1;
 }
-/* الحاوية الرئيسية مع التدرج اللوني */
 .container-parent {
   background:
     linear-gradient(
@@ -64,13 +61,10 @@
   gap: 42px;
   flex-shrink: 0;
   max-width: 100%;
-  width: 100%; /* ضمان عدم تجاوز العرض */
   z-index: 2;
 }
-/* شريط التنقل العلوي - Navigation Bar */
 .container {
-  width: 100%;
-  max-width: 100%; /* منع تجاوز العرض */
+  width: 1534px;
   height: 80px;
   background: #000, #fff;
   align-items: center;
@@ -80,7 +74,7 @@
   top: 0;
   z-index: 99;
   position: sticky;
-  box-sizing: border-box;
+  max-width: 100%;
 }
 .container,
 .link,
@@ -101,7 +95,6 @@
   border-radius: 33554400px;
   align-items: center;
   gap: 8px;
-  flex-shrink: 0;
 }
 .text {
   height: 20px;
@@ -133,15 +126,15 @@
   max-height: 100%;
   object-fit: cover;
 }
-/* حاوية المحتوى الرئيسي */
 .container-wrapper {
-  width: 100%;
-  max-width: 100%; /* منع تجاوز العرض */
+  width: 1534px;
+  height: 396px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding: 0 20px;
   box-sizing: border-box;
+  max-width: 100%;
   text-align: center;
   font-size: 14px;
   color: #fff;
@@ -157,11 +150,9 @@
   justify-content: center;
   padding: 32px 0;
   gap: 22px;
-  max-width: 100%;
 }
 .container3 {
   width: 299.6px;
-  max-width: 100%;
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.1),
     0 1px 2px -1px rgba(0, 0, 0, 0.1);
@@ -193,7 +184,6 @@
   height: 13.7px;
   width: 13.7px;
   position: relative;
-  flex-shrink: 0;
 }
 .text2,
 .text3 {
@@ -218,8 +208,7 @@
 }
 .h1 {
   margin: 0;
-  width: 100%;
-  max-width: 680px;
+  width: 680px;
   position: relative;
   font-size: 62px;
   line-height: 70.4px;
@@ -238,8 +227,7 @@
   color: #d90505;
 }
 .div3 {
-  width: 100%;
-  max-width: 598px;
+  width: 598px;
   position: relative;
   font-size: 20px;
   letter-spacing: -0.5px;
@@ -300,18 +288,17 @@
   position: relative;
 }
 .wrapper {
-  width: 100%;
-  max-width: 1534px;
+  width: 1534px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding: 0 20px;
   box-sizing: border-box;
+  max-width: 100%;
   margin-top: -397px;
 }
 .icon5 {
-  width: 100%;
-  max-width: 750px;
+  width: 750px;
   max-height: 100%;
   object-fit: cover;
   flex-shrink: 0;
@@ -348,7 +335,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 79px 25px;
-  min-width: 280px;
+  min-width: 335px;
 }
 .container-container,
 .container6 {
@@ -359,7 +346,6 @@
 .container-container {
   align-self: stretch;
   gap: 32px;
-  flex-wrap: wrap;
 }
 .container6 {
   height: 81px;
@@ -368,7 +354,6 @@
   background-color: rgba(255, 255, 255, 0.14);
   padding: 0 8px;
   box-sizing: border-box;
-  flex-shrink: 0;
 }
 .f7person-3-icon {
   width: 64px;
@@ -381,7 +366,7 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  min-width: 120px;
+  min-width: 183px;
 }
 .div5,
 .k {
@@ -412,7 +397,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 79px 25px;
-  min-width: 280px;
+  min-width: 335px;
 }
 .container8 {
   height: 81px;
@@ -422,7 +407,6 @@
   align-items: center;
   justify-content: center;
   padding: 0 8px;
-  flex-shrink: 0;
 }
 .h3 {
   margin: 0;
@@ -447,7 +431,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 79px 25px;
-  min-width: 280px;
+  min-width: 335px;
   color: #d90505;
 }
 .container10,
@@ -461,7 +445,6 @@
   border-radius: 32px;
   background-color: #fafafa;
   padding: 0 8px;
-  flex-shrink: 0;
 }
 .main2 {
   align-self: stretch;
@@ -485,8 +468,7 @@
   align-items: flex-start;
   position: relative;
   isolation: isolate;
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 436px;
 }
 .container11,
 .group-div {
@@ -516,7 +498,6 @@
 }
 .parent3 {
   width: 456.5px;
-  max-width: 100%;
   height: 899.5px;
   position: relative;
   z-index: 1;
@@ -528,7 +509,6 @@
   left: 37px;
   border-radius: 27px;
   width: 381px;
-  max-width: calc(100% - 74px);
   height: 825px;
   object-fit: cover;
 }
@@ -544,7 +524,7 @@
 .main2-child {
   flex: 1;
   justify-content: center;
-  min-width: 300px;
+  min-width: 436px;
   max-width: 100%;
 }
 .frame-parent,
@@ -574,12 +554,12 @@
   line-height: 60px;
 }
 .frame-section {
-  width: 100%;
-  max-width: 583px;
+  width: 583px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
+  max-width: 100%;
   text-align: right;
   font-size: 20px;
   color: #000;
@@ -593,17 +573,15 @@
 }
 .container12 {
   align-self: stretch;
-  min-height: 60px;
+  height: 60px;
   align-items: flex-start;
   padding: 4px 3px 8px;
   box-sizing: border-box;
 }
 .container-parent3 {
-  width: 100%;
-  max-width: 456.5px;
+  width: 456.5px;
   align-items: center;
   gap: 16px;
-  flex-wrap: wrap;
 }
 .container13 {
   flex: 1;
@@ -611,11 +589,11 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  min-width: 200px;
+  min-width: 255px;
 }
 .heading-4 {
   align-self: stretch;
-  min-height: 28px;
+  height: 28px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -624,8 +602,8 @@
 }
 .h33 {
   margin: 0;
-  min-height: 28px;
-  max-width: 218px;
+  height: 28px;
+  width: 218px;
   position: relative;
   font-size: inherit;
   line-height: 28px;
@@ -644,13 +622,11 @@
   align-items: center;
   justify-content: center;
   padding: 0 11px;
-  flex-shrink: 0;
 }
 .ciclose-md-icon {
   height: 24px;
   width: 24px;
   position: relative;
-  flex-shrink: 0;
 }
 .container-parent4,
 .container15 {
@@ -660,7 +636,7 @@
 }
 .container15 {
   align-self: stretch;
-  min-height: 60px;
+  height: 60px;
   align-items: flex-start;
   padding: 4px 3px 8px;
   box-sizing: border-box;
@@ -668,21 +644,20 @@
 .container-parent4 {
   align-items: center;
   gap: 16px;
-  flex-wrap: wrap;
 }
 .container16 {
-  width: 100%;
-  max-width: 392.5px;
+  width: 392.5px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  max-width: 100%;
 }
 .h34,
 .h35 {
   margin: 0;
-  min-height: 28px;
-  max-width: 270px;
+  height: 28px;
+  width: 270px;
   position: relative;
   font-size: inherit;
   line-height: 28px;
@@ -691,7 +666,7 @@
   display: inline-block;
 }
 .h35 {
-  max-width: 267px;
+  width: 267px;
 }
 .smart-solution {
   align-self: stretch;
@@ -761,7 +736,6 @@
   background-color: #fafafa;
   justify-content: center;
   padding: 0 16px;
-  flex-shrink: 0;
 }
 .div8,
 .h36 {
@@ -805,14 +779,13 @@
 .frame-group {
   justify-content: center;
   gap: 16px;
-  min-width: 0;
-  flex-wrap: wrap;
+  min-width: 748px;
 }
 .container-parent7 {
   align-self: stretch;
   flex-direction: column;
   gap: 24px;
-  min-width: 180px;
+  min-width: 207px;
   max-width: 276px;
 }
 .container30 {
@@ -828,7 +801,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 .streamline-plumpmail-send-icon {
   height: 32px;
@@ -857,7 +829,7 @@
   flex-direction: column;
   align-items: center;
   gap: 22px;
-  min-width: 180px;
+  min-width: 207px;
   max-width: 276px;
 }
 .iconamoonsend {
@@ -876,7 +848,6 @@
   text-align: right;
   font-size: 48px;
   color: #d90505;
-  flex-shrink: 0;
 }
 .h24,
 .h314 {
@@ -903,7 +874,6 @@
   font-size: 34.5px;
   color: #fff;
   font-family: "Hacen Tunisia";
-  overflow: hidden;
 }
 .container34,
 .container35,
@@ -914,11 +884,11 @@
 }
 .resultssection {
   align-self: stretch;
-  min-height: 811px;
+  height: 811px;
   background-color: #000;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 128px 40px 40px;
+  padding: 128px 40px 0;
   box-sizing: border-box;
 }
 .container34,
@@ -927,7 +897,8 @@
 }
 .container34 {
   width: 100%;
-  padding: 0 20px;
+  height: 633.9px;
+  padding: 0 64px;
   box-sizing: border-box;
   gap: 80px;
   max-width: 100%;
@@ -942,9 +913,9 @@
   align-items: flex-end;
 }
 .heading-22 {
-  width: 100%;
-  max-width: 640px;
-  padding: 0 20px 44px;
+  width: 640px;
+  height: 44.9px;
+  padding: 0 161px 44px;
   box-sizing: border-box;
   position: relative;
   isolation: isolate;
@@ -957,7 +928,7 @@
 }
 .text4 {
   align-self: stretch;
-  min-height: 51px;
+  height: 51px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -971,13 +942,12 @@
   font-family: inherit;
 }
 .div12 {
-  width: 100%;
-  max-width: 581px;
+  height: 78px;
+  width: 581px;
   position: absolute;
   margin: 0 !important;
   top: 5.4px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: -8px;
   font-size: 24px;
   line-height: 39px;
   background:
@@ -994,17 +964,15 @@
   align-items: flex-start;
 }
 .div13 {
-  width: 100%;
+  width: 1454.5px;
   overflow-x: auto;
-  justify-content: flex-start;
-  gap: 24px;
+  justify-content: flex-end;
+  gap: 57px;
   text-align: right;
   font-size: 22px;
-  padding-bottom: 20px;
 }
 .container36 {
   height: 421.8px;
-  min-width: 280px;
   width: 304px;
   border-radius: 24px;
   overflow: hidden;
@@ -1014,7 +982,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  flex-shrink: 0;
 }
 .h315,
 .paragraph {
@@ -1041,7 +1008,6 @@
 .container42,
 .container43 {
   height: 421.8px;
-  min-width: 280px;
   width: 304px;
   border-radius: 24px;
   overflow: hidden;
@@ -1096,11 +1062,11 @@
 }
 .resultssection2 {
   align-self: stretch;
-  min-height: 758px;
+  height: 758px;
   background-color: #000;
   overflow: hidden;
   align-items: center;
-  padding: 67px 40px 40px;
+  padding: 67px 40px 0;
   box-sizing: border-box;
 }
 .text-container {
@@ -1123,18 +1089,16 @@
 .div14 {
   flex-shrink: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 .div14 {
-  width: 100%;
+  width: 1454.5px;
   overflow-x: auto;
   align-items: flex-start;
-  gap: 24px;
-  padding-bottom: 20px;
+  gap: 32px;
 }
 .container45 {
   height: 422px;
-  min-width: 300px;
   width: 400px;
   border-radius: 24px;
   overflow: hidden;
@@ -1149,7 +1113,6 @@
   font-size: 22px;
   color: #fff;
   font-family: "Hacen Tunisia";
-  flex-shrink: 0;
 }
 .paragraph9 {
   height: 78.8px;
@@ -1160,7 +1123,6 @@
 .parent4 {
   height: 72px;
   width: 238px;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1181,7 +1143,6 @@
 }
 .div15 {
   width: 228px;
-  max-width: 100%;
   font-size: 14px;
   line-height: 17px;
   display: inline-block;
@@ -1193,7 +1154,6 @@
 }
 .container46 {
   height: 422px;
-  min-width: 300px;
   width: 400px;
   border-radius: 24px;
   overflow: hidden;
@@ -1212,7 +1172,6 @@
 .parent5 {
   height: 72px;
   width: 300px;
-  max-width: 100%;
   flex-direction: column;
   align-items: flex-end;
   gap: 5px;
@@ -1230,7 +1189,6 @@
 }
 .container47 {
   height: 422px;
-  min-width: 300px;
   width: 400px;
   border-radius: 24px;
   overflow: hidden;
@@ -1249,14 +1207,12 @@
 .parent6 {
   height: 72px;
   width: 283px;
-  max-width: 100%;
   flex-direction: column;
   align-items: flex-end;
   gap: 5px;
 }
 .div17 {
   width: 233px;
-  max-width: 100%;
   position: relative;
   font-size: 14px;
   line-height: 17px;
@@ -1269,7 +1225,6 @@
 }
 .container48 {
   height: 422px;
-  min-width: 300px;
   width: 400px;
   border-radius: 24px;
   overflow: hidden;
@@ -1289,7 +1244,6 @@
 .parent7 {
   height: 72px;
   width: 238px;
-  max-width: 100%;
   flex-direction: column;
   align-items: flex-end;
   gap: 5px;
@@ -1297,7 +1251,6 @@
 .container49,
 .container50 {
   height: 422px;
-  min-width: 300px;
   width: 400px;
   border-radius: 24px;
   overflow: hidden;
@@ -1328,15 +1281,16 @@
 }
 .resultssection3 {
   align-self: stretch;
-  min-height: 521px;
+  height: 521px;
   background-color: #000;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 32px 20px 40px;
+  padding: 32px 40px 0;
 }
 .container51 {
   width: 100%;
-  padding: 0 20px;
+  height: 372px;
+  padding: 0 64px;
   gap: 32px;
   max-width: 100%;
 }
@@ -1352,7 +1306,7 @@
 }
 .text6 {
   width: 100%;
-  min-height: 51px;
+  height: 51px;
   max-width: 100%;
 }
 .h27 {
@@ -1362,20 +1316,31 @@
   font-weight: 400;
   font-family: inherit;
 }
+/* تفعيل التمرير الأفقي السلس وتأثير المحاذاة (Snap) وإخفاء شريط التمرير لقسم آراء العملاء */
 .client-photos {
-  width: 100%;
-  max-width: 1164px;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 32px;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* لمتصفح فايرفوكس */
+  -ms-overflow-style: none; /* لمتصفح إيدج وإنترنت إكسبلورر */
+}
+.client-photos::-webkit-scrollbar {
+  display: none; /* لمتصفحات كروم وسفاري */
+}
+.client-photos > img {
+  scroll-snap-align: center;
+  flex-shrink: 0;
 }
 .photo-2026-05-21-20-42-33-1-icon,
 .photo-2026-05-21-20-42-43-1-icon {
   height: 233px;
   width: 259px;
-  max-width: 100%;
   position: relative;
   object-fit: cover;
   flex-shrink: 0;
@@ -1388,7 +1353,6 @@
 .photo-2026-05-21-20-42-21-1-icon {
   height: 233px;
   width: 258px;
-  max-width: 100%;
   position: relative;
   object-fit: cover;
   flex-shrink: 0;
@@ -1398,7 +1362,7 @@
   width: 261px;
 }
 .resultssection-group {
-  width: 100%;
+  width: 1534px;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -1406,12 +1370,12 @@
 }
 .resultssection4 {
   align-self: stretch;
-  min-height: 717px;
+  height: 717px;
   background-color: #000;
   overflow: hidden;
   flex-shrink: 0;
   align-items: center;
-  padding: 32px 20px 40px;
+  padding: 32px 40px 0;
   box-sizing: border-box;
 }
 .container52,
@@ -1424,7 +1388,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 64px;
   box-sizing: border-box;
   gap: 80px;
   max-width: 100%;
@@ -1442,20 +1406,34 @@
   font-family: inherit;
   flex-shrink: 0;
 }
-.container-inner,
-.container-parent11 {
-  align-self: stretch;
-  overflow-x: auto;
-  display: flex;
-}
+/* تفعيل التمرير الأفقي السلس وتأثير المحاذاة (Snap) وإخفاء شريط التمرير لقسم معرض السيارات المباعة */
 .container-inner {
   flex-direction: column;
   align-items: flex-end;
-  padding: 10px 0;
+  padding: 10px;
+  align-self: stretch;
+  overflow: visible !important;
 }
 .container-parent11 {
+  align-self: stretch;
+  display: flex;
   align-items: flex-start;
+  position: relative;
+  isolation: isolate;
   gap: 32px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* لمتصفح فايرفوكس */
+  -ms-overflow-style: none; /* لمتصفح إيدج وإنترنت إكسبلورر */
+}
+.container-parent11::-webkit-scrollbar {
+  display: none; /* لمتصفحات كروم وسفاري */
+}
+.container-parent11 > img {
+  scroll-snap-align: center;
+  flex-shrink: 0;
 }
 .container-icon,
 .container-icon2,
@@ -1464,11 +1442,79 @@
 .container-icon5,
 .container-icon6 {
   height: 447px;
-  min-width: 280px;
   width: 313px;
+  position: relative;
   border-radius: 24px;
   flex-shrink: 0;
   object-fit: cover;
+  z-index: 0;
+}
+.container-icon2,
+.container-icon3,
+.container-icon4,
+.container-icon5,
+.container-icon6 {
+  z-index: 1;
+}
+.container-icon3,
+.container-icon4,
+.container-icon5,
+.container-icon6 {
+  z-index: 2;
+}
+.container-icon4,
+.container-icon5,
+.container-icon6 {
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: 1372px;
+  max-height: 100%;
+  z-index: 3;
+}
+.container-icon5,
+.container-icon6 {
+  left: 1715px;
+  z-index: 4;
+}
+.container-icon6 {
+  left: 2058px;
+  z-index: 5;
+}
+.container-icon10,
+.container-icon7,
+.container-icon8,
+.container-icon9 {
+  height: 447px;
+  width: 313px;
+  position: relative;
+  border-radius: 24px;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 6;
+}
+.container-icon10,
+.container-icon8,
+.container-icon9 {
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: 2401px;
+  max-height: 100%;
+  z-index: 7;
+}
+.container-icon10,
+.container-icon9 {
+  left: 2744px;
+  z-index: 8;
+}
+.container-icon10 {
+  left: 3087px;
+  z-index: 9;
 }
 .container53,
 .resultssection5 {
@@ -1478,11 +1524,11 @@
 }
 .resultssection5 {
   align-self: stretch;
-  min-height: 715px;
+  height: 715px;
   background-color: #000;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 32px 20px 40px;
+  padding: 32px 40px 0;
   box-sizing: border-box;
 }
 .container53 {
@@ -1491,20 +1537,32 @@
   gap: 80px;
   max-width: 100%;
 }
+/* تفعيل التمرير الأفقي السلس وتأثير المحاذاة (Snap) وإخفاء شريط التمرير لقسم نتائج الحملات */
 .campaign-data {
-  width: 100%;
+  max-width: 100%;
+  align-self: stretch;
   overflow-x: auto;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 32px;
-  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* لمتصفح فايرفوكس */
+  -ms-overflow-style: none; /* لمتصفح إيدج وإنترنت إكسبلورر */
+}
+.campaign-data::-webkit-scrollbar {
+  display: none; /* لمتصفحات كروم وسفاري */
+}
+.campaign-data > img {
+  scroll-snap-align: center;
+  flex-shrink: 0;
 }
 .container-icon11 {
   height: 447px;
-  min-width: 300px;
   width: 817px;
-  max-width: 100%;
+  position: relative;
   border-radius: 24px;
   flex-shrink: 0;
   object-fit: cover;
@@ -1526,21 +1584,20 @@
   font-family: "IBM Plex Sans Arabic";
 }
 .landingpage {
-  min-height: 400px;
+  height: 544px;
   overflow: hidden;
   flex-shrink: 0;
   align-items: flex-end;
-  justify-content: center;
-  padding: 128px 40px 35px;
+  padding: 128px 117px 35px 383px;
   box-sizing: border-box;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 186px;
   background-image: url(./public/LandingPage@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
 .call-to-action {
+  height: 381px;
   flex-direction: column;
   max-width: 100%;
   text-align: center;
@@ -1560,16 +1617,18 @@
   gap: 36px;
 }
 .heading-23 {
-  width: 100%;
-  max-width: 768px;
-  min-height: 120px;
+  width: 768px;
+  height: 120px;
   position: relative;
   isolation: isolate;
 }
 .div21 {
-  width: 100%;
-  max-width: 413px;
-  position: relative;
+  height: 144px;
+  width: 413px;
+  position: absolute;
+  margin: 0 !important;
+  right: 177px;
+  bottom: -15px;
   line-height: 72px;
   display: inline-block;
   flex-shrink: 0;
@@ -1584,7 +1643,7 @@
 .whatsapp-button {
   display: flex;
   align-items: flex-start;
-  padding: 0;
+  padding: 0 248px;
 }
 .link3 {
   cursor: pointer;
@@ -1596,7 +1655,8 @@
   z-index: 1;
 }
 .div22 {
-  min-height: 28px;
+  height: 28px;
+  width: 139px;
   position: relative;
   font-size: 20px;
   line-height: 28px;
@@ -1640,16 +1700,15 @@
   align-items: center;
   justify-content: center;
   padding: 0 12px;
-  flex-shrink: 0;
 }
 .footer {
   align-self: stretch;
-  min-height: 129px;
+  height: 129px;
   background-color: #000;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   flex-direction: column;
   align-items: flex-start;
-  padding: 49px 24px 24px;
+  padding: 49px 0 0;
   z-index: 1;
 }
 .container57,
@@ -1659,10 +1718,11 @@
 }
 .container57 {
   align-self: stretch;
-  min-height: 32px;
+  height: 32px;
   justify-content: space-between;
+  padding: 0 24px 0 61px;
+  box-sizing: border-box;
   gap: 20px;
-  flex-wrap: wrap;
 }
 .social-links {
   width: 120px;
@@ -1671,7 +1731,8 @@
   flex-shrink: 0;
 }
 .paragraph16 {
-  min-height: 24px;
+  height: 24px;
+  width: 272.8px;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
@@ -1688,77 +1749,163 @@
   object-fit: cover;
   flex-shrink: 0;
 }
-.support-elements,
-.support-elements-parent {
-  max-width: 341px;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  box-sizing: border-box;
-}
-.support-elements-parent {
-  margin: 0 !important;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 0 0 14.3px;
-  isolation: isolate;
-  z-index: 1000;
-  color: #000;
-  font-family: "Hacen Tunisia";
-}
-.support-elements {
-  border-radius: 10px;
-  background-color: #fff;
-  overflow: hidden;
-  flex-shrink: 0;
-  padding: 19px 13px 20px;
-  gap: 13px;
-  z-index: 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-.support-elements-child {
-  height: 36px;
-  width: 37px;
-  border-radius: 40px;
-  object-fit: cover;
-  z-index: 2;
-  flex-shrink: 0;
-}
-.frame {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 6px 0 0;
-  z-index: 1;
-  flex: 1;
-  min-width: 0;
-}
-.div23 {
-  width: 100%;
-  max-width: 248px;
-  min-height: 24px;
-  position: relative;
-  line-height: 24px;
-  display: inline-block;
-}
-.frame-child {
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  margin: 0 !important;
-  top: 54.01px;
-  left: 319.85px;
-  background-color: #fff;
-  overflow: hidden;
-  flex-shrink: 0;
-  transform: rotate(42.4deg);
-  transform-origin: 0 0;
-  z-index: 1;
+
+/* ========================================== */
+/* زر واتساب العائم والاحترافي مع فقاعة الترحيب */
+/* ========================================== */
+
+/* تأثير النبض الاحترافي لزر واتساب العائم */
+@keyframes whatsappPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    transform: scale(1);
+  }
 }
 
-/* Media Queries */
+.support-elements-parent {
+  position: fixed !important;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  height: auto !important;
+  width: auto !important;
+  left: auto !important;
+  top: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  isolation: isolate;
+  background: transparent !important;
+}
+
+.support-elements {
+  border-radius: 14px;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  padding: 12px 18px !important;
+  flex-shrink: 0;
+  z-index: 2;
+  transition: all 0.3s ease;
+  order: 1;
+}
+
+.whatsapp-btn-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+  animation: whatsappPulse 2s infinite;
+  transition: all 0.3s ease;
+  order: 2;
+  z-index: 3;
+}
+
+.whatsapp-btn-circle:hover {
+  background-color: #20ba5a;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+}
+
+.support-elements-child {
+  display: none !important;
+}
+
+.div23 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-align: right;
+  font-family: "IBM Plex Sans Arabic", "Hacen Tunisia", sans-serif;
+  direction: rtl;
+  width: auto !important;
+  height: auto !important;
+}
+
+.frame-child {
+  height: 12px !important;
+  width: 12px !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 68px !important; /* يربط بين الفقاعة والزر الدائري */
+  margin-top: -6px !important;
+  background-color: #fff !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  transform: rotate(45deg) !important;
+  z-index: 1 !important;
+  left: auto !important;
+  border-radius: 0 !important;
+}
+
+/* ========================================== */
+/* تحسين تفاعل ونعومة الأزرار والروابط (Tactile Hovers) */
+/* ========================================== */
+a, button, .link, .link2, .link3, .container4, .social-link-item, .whatsapp-btn-circle, .support-elements {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+}
+
+.link2:hover,
+.link3:hover {
+  background-color: #b80404 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(217, 5, 5, 0.35);
+}
+
+.social-link-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social-link-item:hover {
+  transform: translateY(-3px) scale(1.1);
+  opacity: 0.8;
+}
+
+/* في الشاشات الصغيرة، نخفي فقاعة المحادثة النصية ونبقي على زر واتساب العائم لتوفير المساحة */
+@media screen and (max-width: 768px) {
+  .support-elements,
+  .frame-child {
+    display: none !important;
+  }
+  .support-elements-parent {
+    bottom: 20px !important;
+    right: 20px !important;
+  }
+}
+
 @media screen and (max-width: 1425px) {
+  .high-converting-landing-page {
+    height: auto;
+  }
   .main2 {
     gap: 31px;
     padding-left: 32px;
@@ -1771,9 +1918,13 @@
   .container34,
   .container51,
   .container52 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
+  }
+  .landingpage {
+    height: auto;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1822,8 +1973,8 @@
     flex-wrap: wrap;
   }
   .container21 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
   }
   .h23 {
@@ -1831,8 +1982,8 @@
     line-height: 48px;
   }
   .how-to-work {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
   }
   .h24 {
@@ -1847,8 +1998,8 @@
     gap: 40px;
   }
   .heading-22 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     box-sizing: border-box;
   }
   .h25 {
@@ -1856,7 +2007,7 @@
     line-height: 36px;
   }
   .div13 {
-    gap: 16px;
+    gap: 28px;
   }
   .resultssection2 {
     padding-top: 44px;
@@ -1893,34 +2044,104 @@
     gap: 16px;
   }
   .landingpage {
-    gap: 30px;
-    padding: 60px 20px 30px;
+    gap: 93px;
+    padding: 83px 58px 23px 191px;
     box-sizing: border-box;
   }
   .div21 {
     font-size: 51px;
     line-height: 58px;
   }
+  .whatsapp-button {
+    padding-left: 124px;
+    padding-right: 124px;
+    box-sizing: border-box;
+  }
+  .footer {
+    height: auto;
+  }
   .container57 {
     height: auto;
     flex-wrap: wrap;
     gap: 20px;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+
+  /* ========================================== */
+  /* إصلاح مشاكل التجاوب والتمرير الأفقي للهواتف والتابلت */
+  /* ========================================== */
+  
+  /* تعديل صورة الهيرو الرئيسية للسيارة لتتناسب مع شاشات الهواتف والتابلت */
+  .icon5 {
+    width: 100% !important;
+    max-width: 550px !important;
+    height: auto !important;
+  }
+  .wrapper {
+    margin-top: -150px !important;
+  }
+
+  /* تعديل محاذاة آراء العملاء في التمرير لتصبح متناسقة لللمس */
+  .client-photos {
+    justify-content: flex-start !important;
+    padding: 10px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* إتاحة عرض بطاقات كروت السيارات ونتائج الإعلانات بنسب مرنة ممتازة (Peek Effect) */
+  .container-icon,
+  .container-icon2,
+  .container-icon3,
+  .container-icon4,
+  .container-icon5,
+  .container-icon6,
+  .container-icon7,
+  .container-icon8,
+  .container-icon9,
+  .container-icon10 {
+    width: 70vw !important;
+    height: auto !important;
+    aspect-ratio: 313 / 447 !important;
+  }
+  .container-icon11 {
+    width: 85vw !important;
+    height: auto !important;
+    aspect-ratio: 817 / 447 !important;
+  }
+
+  /* محاكاة إطار الهاتف التفاعلي لتصغيره بشكل متجاوب ومنع الخروج عن الشاشة */
+  .group-div {
+    padding: 0 20px !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .parent3 {
+    width: 100% !important;
+    max-width: 340px !important;
+    height: 670px !important;
+  }
+  .icon6 {
+    width: 83.5% !important;
+    height: 91.7% !important;
+    top: 4.2% !important;
+    left: 8.1% !important;
   }
 }
 @media screen and (max-width: 450px) {
   .container-parent {
     gap: 21px;
-    padding-bottom: 200px;
   }
   .container {
-    gap: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
   }
   .h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 37px;
+    line-height: 42px;
   }
   .div3 {
     font-size: 16px;
@@ -1930,38 +2151,27 @@
   .high-converting-landing-page-inner {
     gap: 16px;
   }
-  .container-group {
-    padding: 16px 16px;
-  }
-  .container5,
-  .container7,
-  .container9 {
-    min-width: 100%;
-    padding: 40px 20px;
-  }
   .container-container {
     gap: 16px;
     flex-wrap: wrap;
   }
   .k {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 29px;
+    line-height: 17px;
   }
   .div5,
   .h3 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 19px;
+    line-height: 21px;
   }
   .main2 {
-    padding: 20px 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-sizing: border-box;
   }
-  .main2-inner {
-    display: none;
-  }
   .div6 {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 29px;
+    line-height: 36px;
   }
   .container12 {
     height: auto;
@@ -1980,18 +2190,18 @@
   }
   .container21 {
     gap: 17px;
-    padding: 25px 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     box-sizing: border-box;
   }
   .h23 {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 29px;
+    line-height: 36px;
   }
   .container22 {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
-    min-width: 100%;
-    max-width: 100%;
   }
   .h36 {
     font-size: 16px;
@@ -1999,42 +2209,28 @@
   }
   .how-to-work {
     gap: 16px;
-    padding: 32px 16px;
-    flex-direction: column;
-  }
-  .workflow {
-    align-items: center;
-    text-align: center;
-  }
-  .frame-group {
-    width: 100%;
-  }
-  .container-parent7,
-  .container-parent8 {
-    max-width: 100%;
-    min-width: 140px;
   }
   .h310 {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .h24 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 29px;
+    line-height: 24px;
   }
   .h314 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .resultssection {
-    padding: 40px 16px;
+    padding-top: 54px;
     box-sizing: border-box;
   }
   .container34 {
     gap: 20px;
-    padding: 0;
   }
   .heading-22 {
-    padding: 0 10px 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
   }
   .h25 {
@@ -2042,13 +2238,18 @@
     line-height: 27px;
   }
   .div12 {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 19px;
+    line-height: 31px;
   }
-  .div13 {
-    gap: 12px;
+  .container36 {
+    padding-top: 212px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
   }
-  .container36,
+  .h315 {
+    font-size: 18px;
+    line-height: 26px;
+  }
   .container37,
   .container38,
   .container39,
@@ -2056,136 +2257,89 @@
   .container41,
   .container42,
   .container43 {
-    min-width: 240px;
-    width: 260px;
-    height: 360px;
-    padding: 280px 20px 40px;
-  }
-  .h315 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .resultssection2 {
-    padding: 40px 16px;
+    padding-top: 212px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
   }
   .h26 {
     font-size: 21px;
     line-height: 27px;
   }
-  .div14 {
-    gap: 12px;
+  .h323 {
+    font-size: 18px;
+    line-height: 26px;
   }
-  .container45,
-  .container46,
+  .container46 {
+    padding-left: 20px;
+    padding-top: 181px;
+    padding-bottom: 45px;
+    box-sizing: border-box;
+  }
   .container47,
   .container48,
   .container49,
   .container50 {
-    min-width: 260px;
-    width: 300px;
-    height: 380px;
-    padding: 240px 20px 60px;
-  }
-  .h323 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .resultssection3 {
-    padding: 32px 16px;
-  }
-  .container51 {
-    padding: 0;
+    padding-top: 181px;
+    padding-bottom: 44px;
+    box-sizing: border-box;
   }
   .h27 {
     font-size: 21px;
   }
-  .client-photos {
-    gap: 12px;
-  }
-  .photo-2026-05-21-20-42-33-1-icon,
-  .photo-2026-05-21-20-42-43-1-icon,
-  .photo-2026-05-21-20-42-05-2-icon,
-  .photo-2026-05-21-20-42-21-1-icon {
-    width: 140px;
-    height: auto;
-  }
-  .resultssection4 {
-    padding: 32px 16px;
-  }
   .container52 {
     gap: 20px;
-    padding: 0;
   }
   .h28 {
     font-size: 21px;
     line-height: 27px;
   }
-  .container-parent11 {
-    gap: 12px;
-  }
-  .container-icon,
-  .container-icon2,
-  .container-icon3,
-  .container-icon4,
-  .container-icon5,
-  .container-icon6 {
-    min-width: 240px;
-    width: 280px;
-    height: 400px;
-  }
-  .resultssection5 {
-    padding: 32px 16px;
-  }
   .container53 {
     gap: 20px;
   }
-  .campaign-data {
-    gap: 12px;
-  }
-  .container-icon11 {
-    min-width: 280px;
-    width: 320px;
-    height: 200px;
-  }
   .landingpage {
-    gap: 20px;
-    padding: 40px 16px 30px;
+    gap: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
   }
-  .call-to-action {
-    font-size: 32px;
-  }
   .container54 {
-    gap: 20px;
-    padding-bottom: 32px;
+    gap: 18px;
   }
   .div21 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 38px;
+    line-height: 43px;
   }
-  .link3 {
-    padding: 16px 24px;
+  .whatsapp-button {
+    padding-right: 20px;
+  }
+  .link3,
+  .whatsapp-button {
+    padding-left: 20px;
+    box-sizing: border-box;
   }
   .div22 {
     font-size: 16px;
     line-height: 22px;
   }
-  .footer {
-    padding: 30px 16px 20px;
+
+  /* تخصيصات إضافية للهواتف شديدة الصغر (أقل من 450 بكسل) */
+  .icon5 {
+    max-width: 340px !important;
   }
-  .container57 {
-    justify-content: center;
-    text-align: center;
+  .wrapper {
+    margin-top: -80px !important;
   }
-  .support-elements-parent {
-    right: 10px;
-    bottom: 10px;
-    max-width: calc(100% - 20px);
+  .group-div {
+    padding: 0 10px !important;
   }
-  .support-elements {
-    padding: 12px 10px;
-  }
-  .div23 {
-    font-size: 14px;
+  .parent3 {
+    max-width: 280px !important;
+    height: 552px !important;
   }
 }
+
+
+
+
+
+
