@@ -30,7 +30,7 @@ body {
   height: 899px;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(./public/1@2x.png);
+  background-image: url(./public/hero-bg-city.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -973,7 +973,7 @@ body {
   overflow: hidden;
   padding: 326px 31px 59px 33px;
   box-sizing: border-box;
-  background-image: url(./public/Container@3x.png);
+  background-image: url(./public/service-yachts.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1011,7 +1011,7 @@ body {
   align-items: flex-start;
   padding: 326px 31px 59px 33px;
   box-sizing: border-box;
-  background-image: url(./public/Container1@3x.png);
+  background-image: url(./public/service-caravans.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1022,32 +1022,32 @@ body {
 .container41,
 .container42,
 .container43 {
-  background-image: url(./public/Container2@3x.png);
+  background-image: url(./public/service-scrap.png);
 }
 .container39,
 .container40,
 .container41,
 .container42,
 .container43 {
-  background-image: url(./public/Container3@3x.png);
+  background-image: url(./public/service-special-numbers.png);
 }
 .container40,
 .container41,
 .container42,
 .container43 {
-  background-image: url(./public/Container4@3x.png);
+  background-image: url(./public/service-recovery.png);
 }
 .container41,
 .container42,
 .container43 {
-  background-image: url(./public/Container5@3x.png);
+  background-image: url(./public/service-retail.png);
 }
 .container42,
 .container43 {
-  background-image: url(./public/Container6@3x.png);
+  background-image: url(./public/service-garages.png);
 }
 .container43 {
-  background-image: url(./public/Container7@3x.png);
+  background-image: url(./public/service-cars-for-sale.png);
 }
 .resultssection2,
 .text-container {
@@ -1093,7 +1093,7 @@ body {
   align-items: flex-end;
   padding: 70px 32px;
   box-sizing: border-box;
-  background-image: url(./public/Container8@3x.png);
+  background-image: url(./public/other-service-event.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1148,7 +1148,7 @@ body {
   align-items: flex-start;
   padding: 278px 31px 69px 67px;
   box-sizing: border-box;
-  background-image: url(./public/Container9@3x.png);
+  background-image: url(./public/other-service-ads.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1183,7 +1183,7 @@ body {
   align-items: flex-start;
   padding: 278px 33px 68px;
   box-sizing: border-box;
-  background-image: url(./public/Container10@3x.png);
+  background-image: url(./public/other-service-specialized.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1220,7 +1220,7 @@ body {
   justify-content: flex-end;
   padding: 278px 32px 68px;
   box-sizing: border-box;
-  background-image: url(./public/Container11@3x.png);
+  background-image: url(./public/other-service-content.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1248,7 +1248,7 @@ body {
   justify-content: flex-end;
   padding: 278px 32px 68px;
   box-sizing: border-box;
-  background-image: url(./public/Container12@3x.png);
+  background-image: url(./public/other-service-social.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1258,7 +1258,7 @@ body {
   font-family: "Hacen Tunisia";
 }
 .container50 {
-  background-image: url(./public/Container13@3x.png);
+  background-image: url(./public/other-service-car-ads.png);
 }
 .container51,
 .resultssection3 {
@@ -1497,7 +1497,7 @@ body {
   padding: 128px 117px 35px 383px;
   box-sizing: border-box;
   gap: 186px;
-  background-image: url(./public/LandingPage@3x.png);
+  background-image: url(./public/cta-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
