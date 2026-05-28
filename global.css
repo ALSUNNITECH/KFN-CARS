@@ -1,8 +1,3 @@
-/* ==========================================
-   ملف الأنماط العامة - Global Styles
-   يحتوي على الإعدادات الأساسية للموقع
-   ========================================== */
-
 /* إعادة تعيين الأنماط الافتراضية */
 * {
   box-sizing: border-box;
@@ -10,188 +5,62 @@
   padding: 0;
 }
 
-/* إعدادات الصفحة الرئيسية */
+/* إعدادات الصفحة */
 html {
-  overflow-x: hidden; /* منع التمرير الأفقي */
-  scroll-behavior: smooth; /* تمرير سلس */
-  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   line-height: normal;
-  overflow-x: hidden; /* منع التمرير الأفقي */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-:root {
-  /* متغيرات الألوان الرئيسية */
-  --primary-color: #d90505;
-  --secondary-color: #0a0a0a;
-  --white: #fff;
-  --black: #000;
-  --gray-light: #f7f7f7;
-  --gray-dark: #666;
-}
-
-/* ==========================================
-   تخصيص شريط التمرير للأقسام الأفقية
-   Custom Scrollbar for Horizontal Sections
-   ========================================== */
-.div13::-webkit-scrollbar,
-.div14::-webkit-scrollbar,
-.container-parent11::-webkit-scrollbar,
-.campaign-data::-webkit-scrollbar,
-.client-photos::-webkit-scrollbar {
-  height: 6px;
-}
-
-.div13::-webkit-scrollbar-track,
-.div14::-webkit-scrollbar-track,
-.container-parent11::-webkit-scrollbar-track,
-.campaign-data::-webkit-scrollbar-track,
-.client-photos::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-}
-
-.div13::-webkit-scrollbar-thumb,
-.div14::-webkit-scrollbar-thumb,
-.container-parent11::-webkit-scrollbar-thumb,
-.campaign-data::-webkit-scrollbar-thumb,
-.client-photos::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
-}
-
-.div13::-webkit-scrollbar-thumb:hover,
-.div14::-webkit-scrollbar-thumb:hover,
-.container-parent11::-webkit-scrollbar-thumb:hover,
-.campaign-data::-webkit-scrollbar-thumb:hover,
-.client-photos::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-/* ==========================================
-   إعدادات الصور
-   Image Settings
-   ========================================== */
+/* إعدادات الصور - منع التمدد */
 img {
-  -webkit-user-drag: none;
-  user-select: none;
   max-width: 100%;
   height: auto;
 }
 
-/* ==========================================
-   زر واتساب العائم - WhatsApp Floating Button
-   تصميم premium مع حركات سلسة
-   ========================================== */
+/* زر واتساب العائم - دائرة بسيطة في الزاوية */
 .whatsapp-float {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  width: 56px;
+  height: 56px;
+  background-color: #25d366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 
-    0 4px 15px rgba(37, 211, 102, 0.4),
-    0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   z-index: 9999;
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: whatsapp-pulse 2s infinite;
+  transition: opacity 0.2s ease;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 
-    0 6px 20px rgba(37, 211, 102, 0.5),
-    0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.whatsapp-float:active {
-  transform: scale(0.95);
+  opacity: 0.85;
 }
 
 .whatsapp-icon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   color: white;
 }
 
-/* رسالة تظهر عند التحويم */
-.whatsapp-tooltip {
-  position: absolute;
-  right: 70px;
-  background: #333;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-family: "Hacen Tunisia", sans-serif;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-.whatsapp-tooltip::after {
-  content: '';
-  position: absolute;
-  right: -6px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 6px solid transparent;
-  border-left-color: #333;
-}
-
-.whatsapp-float:hover .whatsapp-tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* حركة النبض للزر */
-@keyframes whatsapp-pulse {
-  0% {
-    box-shadow: 
-      0 4px 15px rgba(37, 211, 102, 0.4),
-      0 0 0 0 rgba(37, 211, 102, 0.4);
-  }
-  70% {
-    box-shadow: 
-      0 4px 15px rgba(37, 211, 102, 0.4),
-      0 0 0 15px rgba(37, 211, 102, 0);
-  }
-  100% {
-    box-shadow: 
-      0 4px 15px rgba(37, 211, 102, 0.4),
-      0 0 0 0 rgba(37, 211, 102, 0);
-  }
-}
-
-/* تعديل الزر للموبايل */
+/* تصغير الزر قليلاً على الموبايل */
 @media screen and (max-width: 450px) {
   .whatsapp-float {
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
     bottom: 16px;
     right: 16px;
   }
-  
   .whatsapp-icon {
-    width: 28px;
-    height: 28px;
-  }
-  
-  .whatsapp-tooltip {
-    display: none;
+    width: 24px;
+    height: 24px;
   }
 }

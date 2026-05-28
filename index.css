@@ -1362,7 +1362,8 @@ body {
   width: 261px;
 }
 .resultssection-group {
-  width: 1534px;
+  width: 100%;
+  max-width: 1534px;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -1435,86 +1436,23 @@ body {
   scroll-snap-align: center;
   flex-shrink: 0;
 }
+/* صور السيارات المباعة - كلها بنفس الحجم تتمرر بشكل طبيعي */
 .container-icon,
 .container-icon2,
 .container-icon3,
 .container-icon4,
 .container-icon5,
-.container-icon6 {
-  height: 447px;
-  width: 313px;
-  position: relative;
-  border-radius: 24px;
-  flex-shrink: 0;
-  object-fit: cover;
-  z-index: 0;
-}
-.container-icon2,
-.container-icon3,
-.container-icon4,
-.container-icon5,
-.container-icon6 {
-  z-index: 1;
-}
-.container-icon3,
-.container-icon4,
-.container-icon5,
-.container-icon6 {
-  z-index: 2;
-}
-.container-icon4,
-.container-icon5,
-.container-icon6 {
-  height: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  bottom: 0;
-  left: 1372px;
-  max-height: 100%;
-  z-index: 3;
-}
-.container-icon5,
-.container-icon6 {
-  left: 1715px;
-  z-index: 4;
-}
-.container-icon6 {
-  left: 2058px;
-  z-index: 5;
-}
-.container-icon10,
+.container-icon6,
 .container-icon7,
 .container-icon8,
-.container-icon9 {
+.container-icon9,
+.container-icon10 {
   height: 447px;
   width: 313px;
   position: relative;
   border-radius: 24px;
   flex-shrink: 0;
   object-fit: cover;
-  z-index: 6;
-}
-.container-icon10,
-.container-icon8,
-.container-icon9 {
-  height: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  bottom: 0;
-  left: 2401px;
-  max-height: 100%;
-  z-index: 7;
-}
-.container-icon10,
-.container-icon9 {
-  left: 2744px;
-  z-index: 8;
-}
-.container-icon10 {
-  left: 3087px;
-  z-index: 9;
 }
 .container53,
 .resultssection5 {
@@ -1750,157 +1688,26 @@ body {
   flex-shrink: 0;
 }
 
-/* ========================================== */
-/* زر واتساب العائم والاحترافي مع فقاعة الترحيب */
-/* ========================================== */
-
-/* تأثير النبض الاحترافي لزر واتساب العائم */
-@keyframes whatsappPulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
-    transform: scale(1);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-    transform: scale(1.05);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-    transform: scale(1);
-  }
+/* انتقالات بسيطة للأزرار والروابط */
+a, button, .link, .link2, .link3, .container4 {
+  transition: opacity 0.2s ease;
 }
-
-.support-elements-parent {
-  position: fixed !important;
-  bottom: 24px;
-  right: 24px;
-  z-index: 99999 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px;
-  text-decoration: none;
-  cursor: pointer;
-  height: auto !important;
-  width: auto !important;
-  left: auto !important;
-  top: auto !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  isolation: isolate;
-  background: transparent !important;
-}
-
-.support-elements {
-  border-radius: 14px;
-  background-color: #fff;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
-  padding: 12px 18px !important;
-  flex-shrink: 0;
-  z-index: 2;
-  transition: all 0.3s ease;
-  order: 1;
-}
-
-.whatsapp-btn-circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #25d366;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
-  animation: whatsappPulse 2s infinite;
-  transition: all 0.3s ease;
-  order: 2;
-  z-index: 3;
-}
-
-.whatsapp-btn-circle:hover {
-  background-color: #20ba5a;
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-}
-
-.support-elements-child {
-  display: none !important;
-}
-
-.div23 {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #1a1a1a;
-  text-align: right;
-  font-family: "IBM Plex Sans Arabic", "Hacen Tunisia", sans-serif;
-  direction: rtl;
-  width: auto !important;
-  height: auto !important;
-}
-
-.frame-child {
-  height: 12px !important;
-  width: 12px !important;
-  position: absolute !important;
-  top: 50% !important;
-  right: 68px !important; /* يربط بين الفقاعة والزر الدائري */
-  margin-top: -6px !important;
-  background-color: #fff !important;
-  border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
-  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
-  transform: rotate(45deg) !important;
-  z-index: 1 !important;
-  left: auto !important;
-  border-radius: 0 !important;
-}
-
-/* ========================================== */
-/* تحسين تفاعل ونعومة الأزرار والروابط (Tactile Hovers) */
-/* ========================================== */
-a, button, .link, .link2, .link3, .container4, .social-link-item, .whatsapp-btn-circle, .support-elements {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  opacity: 0.95;
-}
-
+.link:hover,
 .link2:hover,
-.link3:hover {
-  background-color: #b80404 !important;
-  transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(217, 5, 5, 0.35);
+.link3:hover,
+.container4:hover {
+  opacity: 0.85;
 }
-
 .social-link-item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
-
 .social-link-item:hover {
-  transform: translateY(-3px) scale(1.1);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
-/* في الشاشات الصغيرة، نخفي فقاعة المحادثة النصية ونبقي على زر واتساب العائم لتوفير المساحة */
-@media screen and (max-width: 768px) {
-  .support-elements,
-  .frame-child {
-    display: none !important;
-  }
-  .support-elements-parent {
-    bottom: 20px !important;
-    right: 20px !important;
-  }
-}
 
 @media screen and (max-width: 1425px) {
   .high-converting-landing-page {
