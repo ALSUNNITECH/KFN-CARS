@@ -957,19 +957,14 @@ body {
   display: inline-block;
   flex-shrink: 0;
 }
-.container36,
-.div13 {
+.container36 {
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
 }
 .div13 {
-  width: 1454.5px;
-  overflow-x: auto;
-  justify-content: flex-end;
-  gap: 57px;
-  text-align: right;
   font-size: 22px;
+  text-align: right;
 }
 .container36 {
   height: 421.8px;
@@ -1085,17 +1080,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container45,
-.div14 {
+.container45 {
   flex-shrink: 0;
   display: flex;
   justify-content: flex-end;
-}
-.div14 {
-  width: 1454.5px;
-  overflow-x: auto;
-  align-items: flex-start;
-  gap: 32px;
 }
 .container45 {
   height: 422px;
@@ -1316,50 +1304,39 @@ body {
   font-weight: 400;
   font-family: inherit;
 }
-/* تفعيل التمرير الأفقي السلس وتأثير المحاذاة (Snap) وإخفاء شريط التمرير لقسم آراء العملاء */
+/* تنظيم آراء العملاء وتفعيل التمرير الأفقي اليدوي الانسيابي والمريح */
 .client-photos {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 32px;
+  justify-content: flex-start; /* تغيير إلى البداية لضمان عمل التمرير الطبيعي عند التجاوز */
+  gap: 24px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* لمتصفح فايرفوكس */
-  -ms-overflow-style: none; /* لمتصفح إيدج وإنترنت إكسبلورر */
+  padding: 16px 20px;
+  box-sizing: border-box;
+  scrollbar-width: none; /* إخفاء شريط التمرير */
+  -ms-overflow-style: none; /* إخفاء شريط التمرير لـ IE/Edge */
 }
 .client-photos::-webkit-scrollbar {
-  display: none; /* لمتصفحات كروم وسفاري */
+  display: none; /* إخفاء شريط التمرير لمتصفحات كروم وسفاري */
 }
+
+/* تنسيق موحد احترافي لجميع كروت آراء العملاء بدقة متناهية لمنع التمدد المشوه */
 .client-photos > img {
-  scroll-snap-align: center;
-  flex-shrink: 0;
+  height: 250px !important;
+  width: 260px !important;
+  border-radius: 20px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
-.photo-2026-05-21-20-42-33-1-icon,
-.photo-2026-05-21-20-42-43-1-icon {
-  height: 233px;
-  width: 259px;
-  position: relative;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-.photo-2026-05-21-20-42-33-1-icon {
-  height: 251px;
-  width: 261px;
-}
-.photo-2026-05-21-20-42-05-2-icon,
-.photo-2026-05-21-20-42-21-1-icon {
-  height: 233px;
-  width: 258px;
-  position: relative;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-.photo-2026-05-21-20-42-21-1-icon {
-  height: 247px;
-  width: 261px;
+
+.client-photos > img:hover {
+  transform: translateY(-5px) !important;
 }
 .resultssection-group {
   width: 100%;
@@ -1421,22 +1398,8 @@ body {
   align-items: flex-start;
   position: relative;
   isolation: isolate;
-  gap: 32px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* لمتصفح فايرفوكس */
-  -ms-overflow-style: none; /* لمتصفح إيدج وإنترنت إكسبلورر */
 }
-.container-parent11::-webkit-scrollbar {
-  display: none; /* لمتصفحات كروم وسفاري */
-}
-.container-parent11 > img {
-  scroll-snap-align: center;
-  flex-shrink: 0;
-}
-/* صور السيارات المباعة - كلها بنفس الحجم تتمرر بشكل طبيعي */
+/* صور السيارات المباعة - مقاسات موحدة احترافية متناسقة تناسب جميع الشاشات */
 .container-icon,
 .container-icon2,
 .container-icon3,
@@ -1447,12 +1410,12 @@ body {
 .container-icon8,
 .container-icon9,
 .container-icon10 {
-  height: 447px;
-  width: 313px;
-  position: relative;
-  border-radius: 24px;
-  flex-shrink: 0;
-  object-fit: cover;
+  height: 380px !important;
+  width: 270px !important;
+  border-radius: 24px !important;
+  flex-shrink: 0 !important;
+  object-fit: cover !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
 }
 .container53,
 .resultssection5 {
@@ -1497,13 +1460,18 @@ body {
   scroll-snap-align: center;
   flex-shrink: 0;
 }
+/* تصغير صور نتائج الحملات الإعلانية لمنع الحجم العملاق ودعم تمدد المعرض مستقبلاً بسلاسة */
 .container-icon11 {
-  height: 447px;
-  width: 817px;
-  position: relative;
-  border-radius: 24px;
-  flex-shrink: 0;
-  object-fit: cover;
+  height: 220px !important;
+  width: 400px !important;
+  border-radius: 24px !important;
+  flex-shrink: 0 !important;
+  object-fit: cover !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.container-icon11:hover {
+  transform: scale(1.03) !important;
 }
 .landingpage,
 .landingpage-parent {
@@ -2145,8 +2113,61 @@ a, button, .link, .link2, .link3, .container4 {
   }
 }
 
+/* ==========================================================================
+   أنظمة الحركة اللا نهائية والشاشات الدوارة (Marquee System)
+   ========================================================================== */
 
+/* الحاوية الأساسية للماركي - تعمل كقناع (Mask) يمنع ظهور الأشرطة ويحافظ على الأبعاد */
+.div13, .div14, .container-parent11 {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  direction: ltr !important; /* ضمان دوران الحركة من اليسار لليمين بشكل سليم */
+  padding: 10px 0 !important;
+}
 
+/* المسار الداخلي الذي يحتوي على الكروت ويقوم بعملية الحركة الانسيابية */
+.div13 .marquee-track,
+.div14 .marquee-track,
+.container-parent11 .marquee-track {
+  display: flex !important;
+  align-items: center !important;
+  width: max-content !important;
+  direction: rtl !important; /* إعادة اتجاه المحتوى إلى اليمين واليسار الصحيح للغة العربية */
+  will-change: transform;
+}
 
+/* تحديد التباعد الفريد والسرعة لكل قسم لضمان حركة غاية في السلاسة والنقاء */
+.div13 .marquee-track {
+  gap: 57px !important;
+  animation: marquee-scroll-left 35s linear infinite !important;
+}
 
+.div14 .marquee-track {
+  gap: 32px !important;
+  animation: marquee-scroll-left 45s linear infinite !important;
+}
+
+.container-parent11 .marquee-track {
+  gap: 32px !important;
+  animation: marquee-scroll-left 50s linear infinite !important;
+}
+
+/* إيقاف الحركة مؤقتاً عند مرور الماوس لتسهيل القراءة والتفاعل الحسي الاحترافي */
+.div13:hover .marquee-track,
+.div14:hover .marquee-track,
+.container-parent11:hover .marquee-track {
+  animation-play-state: paused !important;
+}
+
+/* تعريف الأنيميشن الخاص بالدوران اللانهائي السلس */
+@keyframes marquee-scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* الانتقال بنسبة النصف تماماً يحقق حلقة تكرار لانهائية غير مرئية الفواصل */
+  }
+}
 
