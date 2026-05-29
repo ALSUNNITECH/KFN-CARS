@@ -339,6 +339,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   margin-top: -397px;
+  z-index: 5;
 }
 .icon5 {
   width: 750px;
