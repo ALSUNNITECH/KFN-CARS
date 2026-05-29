@@ -2351,20 +2351,20 @@ a, button, .link, .link2, .link3, .container4 {
     padding: 0 16px !important;
   }
 
-  /* --- بطاقات الخدمات - مقاس مناسب للموبايل --- */
+  /* --- بطاقات الخدمات - مقاس ممتاز يمنع تكدس وقص الصور --- */
   .container36, .container37, .container38, .container39,
   .container40, .container41, .container42, .container43 {
-    width: 220px !important;
-    height: 350px !important;
-    padding: 250px 16px 24px !important;
+    width: 290px !important;
+    height: 380px !important;
+    padding: 280px 20px 24px !important;
   }
 
-  /* --- بطاقات خدمات اخرى - مقاس مناسب للموبايل --- */
+  /* --- بطاقات خدمات اخرى - مقاس ممتاز يمنع تكدس وقص الصور --- */
   .container45, .container46, .container47,
   .container48, .container49, .container50 {
-    width: 280px !important;
-    height: 350px !important;
-    padding: 200px 20px 24px !important;
+    width: 290px !important;
+    height: 380px !important;
+    padding: 280px 20px 24px !important;
   }
 
   /* --- اراء العملاء - تمرير افقي --- */
