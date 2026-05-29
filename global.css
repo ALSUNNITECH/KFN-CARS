@@ -7,20 +7,27 @@
 
 /* إعدادات الصفحة */
 html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
+  width: 100%;
+  max-width: 100vw;
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   line-height: normal;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
 }
 
 /* إعدادات الصور - منع التمدد */
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* زر واتساب العائم - دائرة بسيطة في الزاوية */
