@@ -2337,6 +2337,19 @@ a, button, .link, .link2, .link3, .container4 {
     padding: 0 !important;
     gap: 32px !important;
   }
+  .container-icon,
+  .container-icon2,
+  .container-icon3,
+  .container-icon4,
+  .container-icon5,
+  .container-icon6,
+  .container-icon7,
+  .container-icon8,
+  .container-icon9,
+  .container-icon10 {
+    width: 220px !important;
+    height: 310px !important;
+  }
 
   /* --- نتائج الحملات --- */
   .resultssection5 {
@@ -2346,6 +2359,10 @@ a, button, .link, .link2, .link3, .container4 {
   .container53 {
     padding: 0 !important;
     gap: 32px !important;
+  }
+  .container-icon11 {
+    width: 280px !important;
+    height: 154px !important;
   }
 
   /* --- قسم CTA - عرض كامل --- */
