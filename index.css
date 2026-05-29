@@ -1,6 +1,6 @@
-/* ========================================== */
-/* إعدادات التمرير السلس ومنع التمرير الأفقي العام */
-/* ========================================== */
+/* ==========================================================================
+   اعدادات عامة - التمرير السلس ومنع التمرير الافقي
+   ========================================================================== */
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +9,9 @@ body {
   margin: 0;
 }
 
+/* ==========================================================================
+   الحاوية الرئيسية للموقع بالكامل
+   ========================================================================== */
 .hero,
 .high-converting-landing-page {
   display: flex;
@@ -25,6 +28,10 @@ body {
   line-height: normal;
   letter-spacing: normal;
 }
+
+/* ==========================================================================
+   قسم الهيرو - الصورة الرئيسية العلوية
+   ========================================================================== */
 .hero {
   align-self: stretch;
   height: 899px;
@@ -36,15 +43,18 @@ body {
   background-position: top;
   max-width: 100%;
 }
+
+/* صورة الخلفية الاحتياطية - مخفية */
 .icon {
   width: 100%;
-  max-width: 1534px;
   height: 899px;
   position: relative;
   object-fit: cover;
   display: none;
   z-index: 1;
 }
+
+/* طبقة التدرج اللوني فوق صورة الهيرو */
 .container-parent {
   background:
     linear-gradient(
@@ -64,9 +74,12 @@ body {
   max-width: 100%;
   z-index: 2;
 }
+
+/* ==========================================================================
+   شريط التنقل العلوي (الهيدر)
+   ========================================================================== */
 .container {
   width: 100%;
-  max-width: 1534px;
   height: 80px;
   background: #000, #fff;
   align-items: center;
@@ -84,6 +97,8 @@ body {
   display: flex;
   box-sizing: border-box;
 }
+
+/* زر تواصل معنا في الهيدر */
 .link {
   cursor: pointer;
   border: 0;
@@ -122,15 +137,20 @@ body {
   height: 16px;
   width: 16px;
 }
+
+/* شعار المنصة */
 .photo-2026-05-16-22-11-16-1-icon {
   width: 95px;
   position: relative;
   max-height: 100%;
   object-fit: cover;
 }
+
+/* ==========================================================================
+   محتوى الهيرو - العناوين والنصوص
+   ========================================================================== */
 .container-wrapper {
   width: 100%;
-  max-width: 1534px;
   height: 396px;
   display: flex;
   align-items: flex-start;
@@ -154,6 +174,8 @@ body {
   padding: 32px 0;
   gap: 22px;
 }
+
+/* شارة المنصة الاكثر تطورا */
 .container3 {
   width: 299.6px;
   box-shadow:
@@ -183,6 +205,8 @@ body {
   display: inline-block;
   flex-shrink: 0;
 }
+
+/* النقطة الحمراء المتحركة بجانب الشارة */
 .text-parent {
   height: 13.7px;
   width: 13.7px;
@@ -209,9 +233,12 @@ body {
   height: 8px;
   z-index: 1;
 }
+
+/* العنوان الرئيسي */
 .h1 {
   margin: 0;
   width: 680px;
+  max-width: 100%;
   position: relative;
   font-size: 62px;
   line-height: 70.4px;
@@ -225,18 +252,27 @@ body {
 .span2 {
   letter-spacing: 1.4px;
 }
+
+/* النص الاحمر المميز - مشترين جادين */
 .span3 {
   letter-spacing: 0.4px;
   color: #d90505;
 }
+
+/* النص الوصفي تحت العنوان */
 .div3 {
   width: 598px;
+  max-width: 100%;
   position: relative;
   font-size: 20px;
   letter-spacing: -0.5px;
   line-height: 32.5px;
   display: inline-block;
 }
+
+/* ==========================================================================
+   زر واتساب الرئيسي في الهيرو
+   ========================================================================== */
 .container4,
 .icon-parent,
 .link2 {
@@ -285,6 +321,10 @@ body {
   color: #fff;
   text-align: left;
 }
+
+/* ==========================================================================
+   صورة السيارات في الهيرو
+   ========================================================================== */
 .div4,
 .icon5,
 .wrapper {
@@ -292,7 +332,6 @@ body {
 }
 .wrapper {
   width: 100%;
-  max-width: 1534px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -303,11 +342,16 @@ body {
 }
 .icon5 {
   width: 750px;
+  max-width: 100%;
   max-height: 100%;
   object-fit: cover;
   flex-shrink: 0;
   z-index: 1;
 }
+
+/* ==========================================================================
+   قسم الاحصائيات - ارقام المنصة
+   ========================================================================== */
 .high-converting-landing-page-inner {
   align-self: stretch;
   display: flex;
@@ -332,6 +376,8 @@ body {
   gap: 32px;
   max-width: 100%;
 }
+
+/* بطاقة الاحصائيات - حمراء */
 .container5 {
   border-radius: 22px;
   background-color: #d90505;
@@ -339,7 +385,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 79px 25px;
-  min-width: 335px;
+  min-width: 250px;
 }
 .container-container,
 .container6 {
@@ -370,7 +416,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  min-width: 183px;
+  min-width: 120px;
 }
 .div5,
 .k {
@@ -388,6 +434,8 @@ body {
   font-size: 24px;
   line-height: 26px;
 }
+
+/* بطاقة الاحصائيات - داكنة */
 .container7,
 .container8 {
   display: flex;
@@ -401,7 +449,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 79px 25px;
-  min-width: 335px;
+  min-width: 250px;
 }
 .container8 {
   height: 81px;
@@ -421,6 +469,8 @@ body {
   font-weight: 400;
   font-family: inherit;
 }
+
+/* بطاقة الاحصائيات - بيضاء */
 .container10,
 .container9,
 .main2 {
@@ -435,7 +485,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 79px 25px;
-  min-width: 335px;
+  min-width: 250px;
   color: #d90505;
 }
 .container10,
@@ -450,6 +500,10 @@ body {
   background-color: #fafafa;
   padding: 0 8px;
 }
+
+/* ==========================================================================
+   قسم التحديات - اعلانك عليه مشاهدات لكن ما يجيك مشتري
+   ========================================================================== */
 .main2 {
   align-self: stretch;
   flex: 1;
@@ -464,6 +518,8 @@ body {
   color: #000;
   font-family: "Hacen Tunisia";
 }
+
+/* الجزء الايسر - صورة الهاتف */
 .main2-inner {
   height: 768px;
   flex: 1;
@@ -472,7 +528,7 @@ body {
   align-items: flex-start;
   position: relative;
   isolation: isolate;
-  min-width: 436px;
+  min-width: 300px;
 }
 .container11,
 .group-div {
@@ -489,6 +545,8 @@ body {
   padding: 0 49px 0 89px;
   isolation: isolate;
 }
+
+/* المربع الاحمر المائل خلف الهاتف */
 .container11 {
   width: calc(100% - 18.5px);
   height: 368px;
@@ -500,8 +558,11 @@ body {
   transform: rotate(3deg);
   transform-origin: 0 0;
 }
+
+/* حاوية صورة الهاتف والخلفية */
 .parent3 {
   width: 456.5px;
+  max-width: 100%;
   height: 899.5px;
   position: relative;
   z-index: 1;
@@ -525,10 +586,12 @@ body {
   object-fit: cover;
   z-index: 1;
 }
+
+/* الجزء الايمن - النصوص والتحديات */
 .main2-child {
   flex: 1;
   justify-content: center;
-  min-width: 436px;
+  min-width: 300px;
   max-width: 100%;
 }
 .frame-parent,
@@ -557,13 +620,15 @@ body {
 .div6 {
   line-height: 60px;
 }
+
+/* بنود التحديات */
 .frame-section {
   width: 583px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
-  max-width: 100%;
   text-align: right;
   font-size: 20px;
   color: #000;
@@ -584,6 +649,7 @@ body {
 }
 .container-parent3 {
   width: 456.5px;
+  max-width: 100%;
   align-items: center;
   gap: 16px;
 }
@@ -593,7 +659,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  min-width: 255px;
+  min-width: 200px;
 }
 .heading-4 {
   align-self: stretch;
@@ -608,6 +674,7 @@ body {
   margin: 0;
   height: 28px;
   width: 218px;
+  max-width: 100%;
   position: relative;
   font-size: inherit;
   line-height: 28px;
@@ -615,6 +682,8 @@ body {
   font-family: inherit;
   display: inline-block;
 }
+
+/* الدائرة الحمراء بعلامة X */
 .container14 {
   height: 48px;
   width: 48px;
@@ -626,6 +695,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 11px;
+  flex-shrink: 0;
 }
 .ciclose-md-icon {
   height: 24px;
@@ -651,17 +721,18 @@ body {
 }
 .container16 {
   width: 392.5px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  max-width: 100%;
 }
 .h34,
 .h35 {
   margin: 0;
   height: 28px;
   width: 270px;
+  max-width: 100%;
   position: relative;
   font-size: inherit;
   line-height: 28px;
@@ -672,6 +743,8 @@ body {
 .h35 {
   width: 267px;
 }
+
+/* صندوق الحل الذكي */
 .smart-solution {
   align-self: stretch;
   display: flex;
@@ -683,6 +756,10 @@ body {
   align-self: stretch;
   position: relative;
 }
+
+/* ==========================================================================
+   قسم ليش تختارنا - المميزات
+   ========================================================================== */
 .container21 {
   align-self: stretch;
   display: flex;
@@ -703,6 +780,8 @@ body {
   font-weight: 400;
   font-family: inherit;
 }
+
+/* حاوية بطاقات المميزات */
 .container-parent6 {
   align-self: stretch;
   display: flex;
@@ -716,6 +795,8 @@ body {
   color: #0a0a0a;
   font-family: "Hacen Tunisia";
 }
+
+/* بطاقة ميزة واحدة */
 .container22,
 .container23 {
   display: flex;
@@ -730,7 +811,7 @@ body {
   flex-direction: column;
   padding: 22px 43px;
   gap: 20px;
-  min-width: 247px;
+  min-width: 200px;
   max-width: 329px;
 }
 .container23 {
@@ -758,6 +839,10 @@ body {
   line-height: 26px;
   color: #666;
 }
+
+/* ==========================================================================
+   قسم كيف نشتغل - خطوات العمل
+   ========================================================================== */
 .how-it-works {
   align-self: stretch;
   display: flex;
@@ -783,15 +868,19 @@ body {
 .frame-group {
   justify-content: center;
   gap: 16px;
-  min-width: 748px;
+  min-width: 300px;
 }
+
+/* بطاقة خطوة عمل واحدة */
 .container-parent7 {
   align-self: stretch;
   flex-direction: column;
   gap: 24px;
-  min-width: 207px;
+  min-width: 180px;
   max-width: 276px;
 }
+
+/* دائرة الايقونة */
 .container30 {
   width: 96px;
   height: 96px;
@@ -826,6 +915,8 @@ body {
   font-weight: 400;
   font-family: inherit;
 }
+
+/* بطاقة خطوة عمل - بديلة */
 .container-parent8 {
   align-self: stretch;
   flex: 1;
@@ -833,7 +924,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 22px;
-  min-width: 207px;
+  min-width: 180px;
   max-width: 276px;
 }
 .iconamoonsend {
@@ -842,6 +933,8 @@ body {
   position: relative;
   object-fit: contain;
 }
+
+/* عنوان كيف نشتغل */
 .workflow {
   height: 98px;
   display: flex;
@@ -869,6 +962,10 @@ body {
   font-family: "Hacen Tunisia Lt";
   color: #666;
 }
+
+/* ==========================================================================
+   قسم الخدمات - بطاقات التصنيفات
+   ========================================================================== */
 .resultssection-parent {
   align-self: stretch;
   display: flex;
@@ -886,6 +983,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* خلفية قسم الخدمات */
 .resultssection {
   align-self: stretch;
   height: 811px;
@@ -911,6 +1010,8 @@ body {
   align-self: stretch;
   flex-shrink: 0;
 }
+
+/* عنوان قسم الخدمات */
 .heading-22,
 .text-wrapper {
   display: flex;
@@ -918,6 +1019,7 @@ body {
 }
 .heading-22 {
   width: 640px;
+  max-width: 100%;
   height: 44.9px;
   padding: 0 161px 44px;
   box-sizing: border-box;
@@ -945,9 +1047,12 @@ body {
   font-weight: 400;
   font-family: inherit;
 }
+
+/* النص الوصفي تحت عنوان الخدمات */
 .div12 {
   height: 78px;
   width: 581px;
+  max-width: 100%;
   position: absolute;
   margin: 0 !important;
   top: 5.4px;
@@ -961,16 +1066,18 @@ body {
   display: inline-block;
   flex-shrink: 0;
 }
-.container36 {
-  flex-shrink: 0;
-  display: flex;
-  align-items: flex-start;
-}
+
+/* حاوية كروت الخدمات المتحركة */
 .div13 {
   font-size: 22px;
   text-align: right;
 }
+
+/* بطاقة خدمة - يخوت */
 .container36 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
   height: 421.8px;
   width: 304px;
   border-radius: 24px;
@@ -999,6 +1106,8 @@ body {
   font-family: inherit;
   display: inline-block;
 }
+
+/* بطاقات الخدمات الاخرى */
 .container37,
 .container38,
 .container39,
@@ -1053,6 +1162,10 @@ body {
 .container43 {
   background-image: url(./public/service-cars-for-sale.png);
 }
+
+/* ==========================================================================
+   قسم خدمات اخرى - بطاقات اكبر مع وصف
+   ========================================================================== */
 .resultssection2,
 .text-container {
   display: flex;
@@ -1084,12 +1197,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* بطاقة تغطية الفعاليات */
 .container45 {
   flex-shrink: 0;
   display: flex;
   justify-content: flex-end;
-}
-.container45 {
   height: 422px;
   width: 400px;
   border-radius: 24px;
@@ -1139,6 +1252,8 @@ body {
   line-height: 17px;
   display: inline-block;
 }
+
+/* بطاقة الاعلانات الممولة */
 .container46,
 .parent5 {
   display: flex;
@@ -1174,6 +1289,8 @@ body {
   font-size: 14px;
   line-height: 17px;
 }
+
+/* بطاقة حلول متخصصة */
 .container47,
 .parent6 {
   display: flex;
@@ -1210,6 +1327,8 @@ body {
   line-height: 17px;
   display: inline-block;
 }
+
+/* بطاقة انتاج المحتوى */
 .container48,
 .parent7 {
   display: flex;
@@ -1240,6 +1359,8 @@ body {
   align-items: flex-end;
   gap: 5px;
 }
+
+/* بطاقة ادارة الحسابات + اعلانات السيارات */
 .container49,
 .container50 {
   height: 422px;
@@ -1264,6 +1385,10 @@ body {
 .container50 {
   background-image: url(./public/other-service-car-ads.png);
 }
+
+/* ==========================================================================
+   قسم اراء العملاء - تمرير افقي يدوي
+   ========================================================================== */
 .container51,
 .resultssection3 {
   display: flex;
@@ -1308,26 +1433,27 @@ body {
   font-weight: 400;
   font-family: inherit;
 }
-/* تنظيم آراء العملاء وتفعيل التمرير الأفقي اليدوي الانسيابي والمريح */
+
+/* شريط اراء العملاء - تمرير افقي ناعم */
 .client-photos {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* تغيير إلى البداية لضمان عمل التمرير الطبيعي عند التجاوز */
+  justify-content: flex-start;
   gap: 24px;
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   padding: 16px 20px;
   box-sizing: border-box;
-  scrollbar-width: none; /* إخفاء شريط التمرير */
-  -ms-overflow-style: none; /* إخفاء شريط التمرير لـ IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .client-photos::-webkit-scrollbar {
-  display: none; /* إخفاء شريط التمرير لمتصفحات كروم وسفاري */
+  display: none;
 }
 
-/* تنسيق موحد احترافي لجميع كروت آراء العملاء بدقة متناهية لمنع التمدد المشوه */
+/* تنسيق موحد لصور اراء العملاء */
 .client-photos > img {
   height: 250px !important;
   width: 260px !important;
@@ -1338,13 +1464,15 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
-
 .client-photos > img:hover {
   transform: translateY(-5px) !important;
 }
+
+/* ==========================================================================
+   قسم السيارات المباعة - معرض متحرك
+   ========================================================================== */
 .resultssection-group {
   width: 100%;
-  max-width: 1534px;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -1388,7 +1516,8 @@ body {
   font-family: inherit;
   flex-shrink: 0;
 }
-/* تفعيل التمرير الأفقي السلس وتأثير المحاذاة (Snap) وإخفاء شريط التمرير لقسم معرض السيارات المباعة */
+
+/* حاوية معرض السيارات المباعة */
 .container-inner {
   flex-direction: column;
   align-items: flex-end;
@@ -1403,7 +1532,8 @@ body {
   position: relative;
   isolation: isolate;
 }
-/* صور السيارات المباعة - مقاسات موحدة احترافية متناسقة تناسب جميع الشاشات */
+
+/* صور السيارات المباعة - مقاسات موحدة */
 .container-icon,
 .container-icon2,
 .container-icon3,
@@ -1421,6 +1551,10 @@ body {
   object-fit: cover !important;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
 }
+
+/* ==========================================================================
+   قسم نتائج الحملات الاعلانية
+   ========================================================================== */
 .container53,
 .resultssection5 {
   display: flex;
@@ -1442,7 +1576,8 @@ body {
   gap: 80px;
   max-width: 100%;
 }
-/* تفعيل التمرير الأفقي السلس وتأثير المحاذاة (Snap) وإخفاء شريط التمرير لقسم نتائج الحملات */
+
+/* شريط نتائج الحملات - تمرير افقي ناعم */
 .campaign-data {
   max-width: 100%;
   align-self: stretch;
@@ -1454,17 +1589,18 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* لمتصفح فايرفوكس */
-  -ms-overflow-style: none; /* لمتصفح إيدج وإنترنت إكسبلورر */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .campaign-data::-webkit-scrollbar {
-  display: none; /* لمتصفحات كروم وسفاري */
+  display: none;
 }
 .campaign-data > img {
   scroll-snap-align: center;
   flex-shrink: 0;
 }
-/* تصغير صور نتائج الحملات الإعلانية لمنع الحجم العملاق ودعم تمدد المعرض مستقبلاً بسلاسة */
+
+/* صور نتائج الحملات - مقاسات موحدة */
 .container-icon11 {
   height: 220px !important;
   width: 400px !important;
@@ -1477,6 +1613,10 @@ body {
 .container-icon11:hover {
   transform: scale(1.03) !important;
 }
+
+/* ==========================================================================
+   قسم اتخاذ الاجراء - CTA + الفوتر
+   ========================================================================== */
 .landingpage,
 .landingpage-parent {
   align-self: stretch;
@@ -1493,6 +1633,8 @@ body {
   color: #99a1af;
   font-family: "IBM Plex Sans Arabic";
 }
+
+/* خلفية قسم CTA */
 .landingpage {
   height: 544px;
   overflow: hidden;
@@ -1506,6 +1648,8 @@ body {
   background-repeat: no-repeat;
   background-position: top;
 }
+
+/* عنوان CTA ومحتواه */
 .call-to-action {
   height: 381px;
   flex-direction: column;
@@ -1528,6 +1672,7 @@ body {
 }
 .heading-23 {
   width: 768px;
+  max-width: 100%;
   height: 120px;
   position: relative;
   isolation: isolate;
@@ -1535,6 +1680,7 @@ body {
 .div21 {
   height: 144px;
   width: 413px;
+  max-width: 100%;
   position: absolute;
   margin: 0 !important;
   right: 177px;
@@ -1549,6 +1695,8 @@ body {
   position: relative;
   display: none;
 }
+
+/* زر واتساب في قسم CTA */
 .link3,
 .whatsapp-button {
   display: flex;
@@ -1611,6 +1759,10 @@ body {
   justify-content: center;
   padding: 0 12px;
 }
+
+/* ==========================================================================
+   الفوتر - تذييل الصفحة
+   ========================================================================== */
 .footer {
   align-self: stretch;
   height: 129px;
@@ -1652,6 +1804,8 @@ body {
   line-height: 24px;
   flex-shrink: 0;
 }
+
+/* شعار المنصة في الفوتر */
 .photo-2026-05-16-22-11-16-1-icon2 {
   width: 95px;
   position: relative;
@@ -1660,7 +1814,9 @@ body {
   flex-shrink: 0;
 }
 
-/* انتقالات بسيطة للأزرار والروابط */
+/* ==========================================================================
+   انتقالات بسيطة للازرار والروابط
+   ========================================================================== */
 a, button, .link, .link2, .link3, .container4 {
   transition: opacity 0.2s ease;
 }
@@ -1670,6 +1826,8 @@ a, button, .link, .link2, .link3, .container4 {
 .container4:hover {
   opacity: 0.85;
 }
+
+/* روابط التواصل الاجتماعي */
 .social-link-item {
   display: inline-flex;
   align-items: center;
@@ -1680,7 +1838,69 @@ a, button, .link, .link2, .link3, .container4 {
   opacity: 0.7;
 }
 
+/* ==========================================================================
+   انظمة الحركة اللانهائية - الماركي (Marquee System)
+   ========================================================================== */
 
+/* الحاوية - تعمل كقناع يمنع ظهور العناصر الخارجة */
+.div13, .div14, .container-parent11 {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  direction: ltr !important;
+  padding: 10px 0 !important;
+}
+
+/* المسار الداخلي المتحرك */
+.div13 .marquee-track,
+.div14 .marquee-track,
+.container-parent11 .marquee-track {
+  display: flex !important;
+  align-items: center !important;
+  width: max-content !important;
+  direction: rtl !important;
+  will-change: transform;
+}
+
+/* سرعة كل قسم - الخدمات */
+.div13 .marquee-track {
+  gap: 57px !important;
+  animation: marquee-scroll-left 35s linear infinite !important;
+}
+
+/* سرعة كل قسم - خدمات اخرى */
+.div14 .marquee-track {
+  gap: 32px !important;
+  animation: marquee-scroll-left 45s linear infinite !important;
+}
+
+/* سرعة كل قسم - السيارات المباعة */
+.container-parent11 .marquee-track {
+  gap: 32px !important;
+  animation: marquee-scroll-left 50s linear infinite !important;
+}
+
+/* ايقاف الحركة عند مرور الماوس */
+.div13:hover .marquee-track,
+.div14:hover .marquee-track,
+.container-parent11:hover .marquee-track {
+  animation-play-state: paused !important;
+}
+
+/* تعريف حركة الماركي */
+@keyframes marquee-scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==========================================================================
+   تابلت وشاشات متوسطة (اقل من 1425 بكسل)
+   ========================================================================== */
 @media screen and (max-width: 1425px) {
   .high-converting-landing-page {
     height: auto;
@@ -1689,7 +1909,6 @@ a, button, .link, .link2, .link3, .container4 {
     gap: 31px;
     padding-left: 32px;
     padding-right: 32px;
-    box-sizing: border-box;
   }
   .how-to-work {
     flex-wrap: wrap;
@@ -1699,24 +1918,30 @@ a, button, .link, .link2, .link3, .container4 {
   .container52 {
     padding-left: 32px;
     padding-right: 32px;
-    box-sizing: border-box;
   }
   .landingpage {
     height: auto;
     flex-wrap: wrap;
   }
 }
+
+/* ==========================================================================
+   شاشات اصغر (اقل من 1200 بكسل)
+   ========================================================================== */
 @media screen and (max-width: 1200px) {
   .main2 {
     padding-top: 21px;
     padding-bottom: 21px;
-    box-sizing: border-box;
   }
   .frame-group {
     flex-wrap: wrap;
     min-width: 100%;
   }
 }
+
+/* ==========================================================================
+   شاشات صغيرة - تابلت صغير وهواتف كبيرة (اقل من 825 بكسل)
+   ========================================================================== */
 @media screen and (max-width: 825px) {
   .h1 {
     font-size: 50px;
@@ -1725,7 +1950,6 @@ a, button, .link, .link2, .link3, .container4 {
   .container-group {
     padding-left: 32px;
     padding-right: 32px;
-    box-sizing: border-box;
   }
   .k {
     font-size: 38px;
@@ -1754,7 +1978,6 @@ a, button, .link, .link2, .link3, .container4 {
   .container21 {
     padding-left: 32px;
     padding-right: 32px;
-    box-sizing: border-box;
   }
   .h23 {
     font-size: 38px;
@@ -1763,7 +1986,6 @@ a, button, .link, .link2, .link3, .container4 {
   .how-to-work {
     padding-left: 32px;
     padding-right: 32px;
-    box-sizing: border-box;
   }
   .h24 {
     font-size: 38px;
@@ -1771,7 +1993,6 @@ a, button, .link, .link2, .link3, .container4 {
   }
   .resultssection {
     padding-top: 83px;
-    box-sizing: border-box;
   }
   .container34 {
     gap: 40px;
@@ -1779,7 +2000,6 @@ a, button, .link, .link2, .link3, .container4 {
   .heading-22 {
     padding-left: 80px;
     padding-right: 80px;
-    box-sizing: border-box;
   }
   .h25 {
     font-size: 28px;
@@ -1790,7 +2010,6 @@ a, button, .link, .link2, .link3, .container4 {
   }
   .resultssection2 {
     padding-top: 44px;
-    box-sizing: border-box;
   }
   .h26 {
     font-size: 28px;
@@ -1825,7 +2044,6 @@ a, button, .link, .link2, .link3, .container4 {
   .landingpage {
     gap: 93px;
     padding: 83px 58px 23px 191px;
-    box-sizing: border-box;
   }
   .div21 {
     font-size: 51px;
@@ -1834,7 +2052,6 @@ a, button, .link, .link2, .link3, .container4 {
   .whatsapp-button {
     padding-left: 124px;
     padding-right: 124px;
-    box-sizing: border-box;
   }
   .footer {
     height: auto;
@@ -1844,14 +2061,9 @@ a, button, .link, .link2, .link3, .container4 {
     flex-wrap: wrap;
     gap: 20px;
     padding-left: 30px;
-    box-sizing: border-box;
   }
 
-  /* ========================================== */
-  /* إصلاح مشاكل التجاوب والتمرير الأفقي للهواتف والتابلت */
-  /* ========================================== */
-  
-  /* تعديل صورة الهيرو الرئيسية للسيارة لتتناسب مع شاشات الهواتف والتابلت */
+  /* تصغير صورة الهيرو */
   .icon5 {
     width: 100% !important;
     max-width: 550px !important;
@@ -1861,14 +2073,13 @@ a, button, .link, .link2, .link3, .container4 {
     margin-top: -150px !important;
   }
 
-  /* تعديل محاذاة آراء العملاء في التمرير لتصبح متناسقة لللمس */
+  /* اراء العملاء */
   .client-photos {
     justify-content: flex-start !important;
     padding: 10px 20px !important;
-    box-sizing: border-box !important;
   }
 
-  /* إتاحة عرض بطاقات كروت السيارات ونتائج الإعلانات بنسب مرنة ممتازة (Peek Effect) */
+  /* صور السيارات المباعة - حجم مرن */
   .container-icon,
   .container-icon2,
   .container-icon3,
@@ -1883,18 +2094,19 @@ a, button, .link, .link2, .link3, .container4 {
     height: auto !important;
     aspect-ratio: 313 / 447 !important;
   }
+
+  /* صور نتائج الحملات - حجم مرن */
   .container-icon11 {
     width: 85vw !important;
     height: auto !important;
     aspect-ratio: 817 / 447 !important;
   }
 
-  /* محاكاة إطار الهاتف التفاعلي لتصغيره بشكل متجاوب ومنع الخروج عن الشاشة */
+  /* تصغير اطار الهاتف */
   .group-div {
     padding: 0 20px !important;
     align-items: center !important;
     width: 100% !important;
-    box-sizing: border-box !important;
   }
   .parent3 {
     width: 100% !important;
@@ -1908,27 +2120,313 @@ a, button, .link, .link2, .link3, .container4 {
     left: 8.1% !important;
   }
 }
+
+/* ==========================================================================
+   اصلاحات الموبايل الشاملة - العرض الكامل بدون فراغات جانبية
+   هذا القسم يعالج المشاكل الاساسية: فراغات يمين/يسار + ترتيب عمودي
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+  /* --- منع التمرير الافقي والغاء اي فراغات جانبية --- */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* --- شريط التنقل العلوي - يبقى افقي مع تقليل الحشو --- */
+  .container {
+    padding: 16px !important;
+    height: auto !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+  }
+
+  /* --- قسم الهيرو - ارتفاع تلقائي --- */
+  .hero {
+    height: auto !important;
+    min-height: 80vh !important;
+  }
+  .container-parent {
+    padding: 0 0 60px !important;
+  }
+  .container-wrapper {
+    height: auto !important;
+    padding: 20px 16px !important;
+  }
+
+  /* --- العنوان الرئيسي - تصغير + عرض كامل --- */
+  .h1 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    width: 100% !important;
+  }
+
+  /* --- النص الوصفي - تصغير + عرض كامل --- */
+  .div3 {
+    font-size: 15px !important;
+    line-height: 24px !important;
+    width: 100% !important;
+  }
+
+  /* --- صورة السيارات - تقليل المسافة السلبية --- */
+  .wrapper {
+    margin-top: -30px !important;
+    padding: 0 16px !important;
+  }
+
+  /* --- قسم الاحصائيات - ترتيب عمودي --- */
+  .high-converting-landing-page-inner {
+    padding: 24px 16px !important;
+  }
+  .container-group {
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 16px !important;
+  }
+  .container5, .container7, .container9 {
+    width: 100% !important;
+    min-width: unset !important;
+    padding: 40px 20px !important;
+  }
+
+  /* --- قسم التحديات - ترتيب عمودي --- */
+  .main2 {
+    flex-direction: column !important;
+    padding: 24px 16px !important;
+    gap: 24px !important;
+  }
+  .main2-inner {
+    height: auto !important;
+    min-width: unset !important;
+    width: 100% !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .main2-child {
+    min-width: unset !important;
+    width: 100% !important;
+  }
+  .frame-parent {
+    width: 100% !important;
+    gap: 20px !important;
+  }
+  .div6 {
+    font-size: 24px !important;
+    line-height: 34px !important;
+    width: 100% !important;
+  }
+  .frame-section {
+    width: 100% !important;
+  }
+  .container-parent3, .container-parent4 {
+    width: 100% !important;
+  }
+  .container13, .container16 {
+    min-width: unset !important;
+  }
+  .smart-solution {
+    width: 100% !important;
+  }
+  .div7 {
+    font-size: 15px !important;
+  }
+
+  /* --- قسم المميزات - ترتيب عمودي --- */
+  .container21 {
+    padding: 32px 16px !important;
+  }
+  .container-parent6 {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .container22 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: unset !important;
+  }
+
+  /* --- خطوات العمل - ترتيب عمودي --- */
+  .how-to-work {
+    flex-direction: column-reverse !important;
+    padding: 32px 16px !important;
+    gap: 24px !important;
+  }
+  .frame-group {
+    width: 100% !important;
+    min-width: unset !important;
+    flex-direction: column !important;
+  }
+  .workflow {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .container-parent7, .container-parent8 {
+    max-width: 100% !important;
+    min-width: unset !important;
+  }
+
+  /* --- قسم الخدمات - عرض كامل + ارتفاع تلقائي --- */
+  .resultssection, .resultssection2 {
+    height: auto !important;
+    padding: 40px 0 !important;
+  }
+  .container34 {
+    padding: 0 16px !important;
+    gap: 24px !important;
+    height: auto !important;
+  }
+  .container35, .text-container {
+    width: 100% !important;
+  }
+  .heading-22 {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+  .div12 {
+    position: relative !important;
+    width: 100% !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  /* --- بطاقات الخدمات - مقاس مناسب للموبايل --- */
+  .container36, .container37, .container38, .container39,
+  .container40, .container41, .container42, .container43 {
+    width: 220px !important;
+    height: 350px !important;
+    padding: 250px 16px 24px !important;
+  }
+
+  /* --- بطاقات خدمات اخرى - مقاس مناسب للموبايل --- */
+  .container45, .container46, .container47,
+  .container48, .container49, .container50 {
+    width: 280px !important;
+    height: 350px !important;
+    padding: 200px 20px 24px !important;
+  }
+
+  /* --- اراء العملاء - تمرير افقي --- */
+  .resultssection3 {
+    height: auto !important;
+    padding: 32px 0 !important;
+  }
+  .container51 {
+    height: auto !important;
+    padding: 0 16px !important;
+  }
+
+  /* --- السيارات المباعة --- */
+  .resultssection4 {
+    height: auto !important;
+    padding: 32px 0 !important;
+  }
+  .container52 {
+    width: 100% !important;
+    padding: 0 16px !important;
+    gap: 32px !important;
+  }
+
+  /* --- نتائج الحملات --- */
+  .resultssection5 {
+    height: auto !important;
+    padding: 32px 0 !important;
+  }
+  .container53 {
+    gap: 32px !important;
+  }
+
+  /* --- قسم CTA - عرض كامل --- */
+  .landingpage {
+    height: auto !important;
+    padding: 40px 16px !important;
+    gap: 24px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .call-to-action {
+    height: auto !important;
+    font-size: 32px !important;
+  }
+  .container54 {
+    width: 100% !important;
+    padding: 0 !important;
+    align-items: center !important;
+  }
+  .heading-23 {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .div21 {
+    position: relative !important;
+    width: 100% !important;
+    right: auto !important;
+    bottom: auto !important;
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+
+  /* --- زر واتساب في CTA - عرض كامل --- */
+  .whatsapp-button {
+    padding: 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .link3 {
+    padding: 16px 32px !important;
+    width: auto !important;
+  }
+
+  /* --- الفوتر - ترتيب عمودي --- */
+  .footer {
+    height: auto !important;
+    padding: 24px 16px !important;
+  }
+  .container57 {
+    flex-direction: column !important;
+    gap: 16px !important;
+    text-align: center !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+  .social-links {
+    justify-content: center !important;
+    width: auto !important;
+  }
+}
+
+/* ==========================================================================
+   هواتف صغيرة (اقل من 450 بكسل) - تعديلات اضافية فوق 768px
+   ========================================================================== */
 @media screen and (max-width: 450px) {
+  /* الهيدر - تقليل الفراغات اكثر */
   .container-parent {
     gap: 21px;
   }
   .container {
     gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
+
+  /* عنوان الهيرو - تصغير اكثر */
   .h1 {
-    font-size: 37px;
-    line-height: 42px;
+    font-size: 28px !important;
+    line-height: 38px !important;
   }
   .div3 {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px !important;
+    line-height: 22px !important;
   }
-  .container-group,
-  .high-converting-landing-page-inner {
-    gap: 16px;
+
+  /* الاحصائيات */
+  .container-group {
+    gap: 12px !important;
   }
   .container-container {
     gap: 16px;
@@ -1943,14 +2441,14 @@ a, button, .link, .link2, .link3, .container4 {
     font-size: 19px;
     line-height: 21px;
   }
+
+  /* التحديات */
   .main2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
+    padding: 16px 12px !important;
   }
   .div6 {
-    font-size: 29px;
-    line-height: 36px;
+    font-size: 22px !important;
+    line-height: 32px !important;
   }
   .container12 {
     height: auto;
@@ -1958,36 +2456,36 @@ a, button, .link, .link2, .link3, .container4 {
   .container-parent3 {
     flex-wrap: wrap;
   }
-  .h33,
-  .h34,
-  .h35 {
+  .h33, .h34, .h35 {
     font-size: 16px;
     line-height: 22px;
   }
   .div7 {
-    font-size: 16px;
+    font-size: 14px !important;
   }
+
+  /* المميزات */
   .container21 {
     gap: 17px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    box-sizing: border-box;
+    padding: 20px 12px !important;
   }
   .h23 {
     font-size: 29px;
     line-height: 36px;
   }
   .container22 {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
   .h36 {
     font-size: 16px;
     line-height: 22px;
   }
+
+  /* خطوات العمل */
   .how-to-work {
-    gap: 16px;
+    gap: 16px !important;
+    padding: 24px 12px !important;
   }
   .h310 {
     font-size: 16px;
@@ -2000,46 +2498,29 @@ a, button, .link, .link2, .link3, .container4 {
   .h314 {
     font-size: 16px;
   }
+
+  /* الخدمات */
   .resultssection {
-    padding-top: 54px;
-    box-sizing: border-box;
+    padding-top: 32px !important;
   }
   .container34 {
-    gap: 20px;
-  }
-  .heading-22 {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
+    gap: 16px !important;
+    padding: 0 12px !important;
   }
   .h25 {
     font-size: 21px;
     line-height: 27px;
   }
   .div12 {
-    font-size: 19px;
-    line-height: 31px;
-  }
-  .container36 {
-    padding-top: 212px;
-    padding-bottom: 38px;
-    box-sizing: border-box;
+    font-size: 16px !important;
+    line-height: 26px !important;
   }
   .h315 {
     font-size: 18px;
     line-height: 26px;
   }
-  .container37,
-  .container38,
-  .container39,
-  .container40,
-  .container41,
-  .container42,
-  .container43 {
-    padding-top: 212px;
-    padding-bottom: 38px;
-    box-sizing: border-box;
-  }
+
+  /* خدمات اخرى */
   .h26 {
     font-size: 21px;
     line-height: 27px;
@@ -2048,343 +2529,80 @@ a, button, .link, .link2, .link3, .container4 {
     font-size: 18px;
     line-height: 26px;
   }
-  .container46 {
-    padding-left: 20px;
-    padding-top: 181px;
-    padding-bottom: 45px;
-    box-sizing: border-box;
-  }
-  .container47,
-  .container48,
-  .container49,
-  .container50 {
-    padding-top: 181px;
-    padding-bottom: 44px;
-    box-sizing: border-box;
-  }
+
+  /* اراء العملاء */
   .h27 {
     font-size: 21px;
   }
+
+  /* السيارات المباعة */
   .container52 {
-    gap: 20px;
+    gap: 20px !important;
+    padding: 0 12px !important;
   }
   .h28 {
     font-size: 21px;
     line-height: 27px;
   }
+
+  /* نتائج الحملات */
   .container53 {
-    gap: 20px;
+    gap: 20px !important;
   }
+
+  /* CTA */
   .landingpage {
-    gap: 46px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
+    padding: 32px 12px !important;
+    gap: 20px !important;
   }
   .container54 {
     gap: 18px;
   }
   .div21 {
-    font-size: 38px;
-    line-height: 43px;
+    font-size: 24px !important;
+    line-height: 34px !important;
   }
   .whatsapp-button {
-    padding-right: 20px;
+    padding: 0 !important;
   }
-  .link3,
-  .whatsapp-button {
-    padding-left: 20px;
-    box-sizing: border-box;
+  .link3 {
+    padding: 14px 24px !important;
   }
   .div22 {
     font-size: 16px;
     line-height: 22px;
   }
 
-  /* تخصيصات إضافية للهواتف شديدة الصغر (أقل من 450 بكسل) */
+  /* صورة الهيرو - اصغر */
   .icon5 {
-    max-width: 340px !important;
+    max-width: 300px !important;
   }
   .wrapper {
-    margin-top: -80px !important;
+    margin-top: -40px !important;
   }
+
+  /* اطار الهاتف - اصغر */
   .group-div {
-    padding: 0 10px !important;
+    padding: 0 8px !important;
   }
   .parent3 {
-    max-width: 280px !important;
-    height: 552px !important;
+    max-width: 260px !important;
+    height: 520px !important;
+  }
+
+  /* الفوتر */
+  .footer {
+    padding: 20px 12px !important;
   }
 }
 
 /* ==========================================================================
-   أنظمة الحركة اللا نهائية والشاشات الدوارة (Marquee System)
+   زر واتساب العائم - اخفاء اي فقاعات نصية
    ========================================================================== */
-
-/* الحاوية الأساسية للماركي - تعمل كقناع (Mask) يمنع ظهور الأشرطة ويحافظ على الأبعاد */
-.div13, .div14, .container-parent11 {
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow: hidden !important;
-  display: flex !important;
-  direction: ltr !important; /* ضمان دوران الحركة من اليسار لليمين بشكل سليم */
-  padding: 10px 0 !important;
-}
-
-/* المسار الداخلي الذي يحتوي على الكروت ويقوم بعملية الحركة الانسيابية */
-.div13 .marquee-track,
-.div14 .marquee-track,
-.container-parent11 .marquee-track {
-  display: flex !important;
-  align-items: center !important;
-  width: max-content !important;
-  direction: rtl !important; /* إعادة اتجاه المحتوى إلى اليمين واليسار الصحيح للغة العربية */
-  will-change: transform;
-}
-
-/* تحديد التباعد الفريد والسرعة لكل قسم لضمان حركة غاية في السلاسة والنقاء */
-.div13 .marquee-track {
-  gap: 57px !important;
-  animation: marquee-scroll-left 35s linear infinite !important;
-}
-
-.div14 .marquee-track {
-  gap: 32px !important;
-  animation: marquee-scroll-left 45s linear infinite !important;
-}
-
-.container-parent11 .marquee-track {
-  gap: 32px !important;
-  animation: marquee-scroll-left 50s linear infinite !important;
-}
-
-/* إيقاف الحركة مؤقتاً عند مرور الماوس لتسهيل القراءة والتفاعل الحسي الاحترافي */
-.div13:hover .marquee-track,
-.div14:hover .marquee-track,
-.container-parent11:hover .marquee-track {
-  animation-play-state: paused !important;
-}
-
-/* تعريف الأنيميشن الخاص بالدوران اللانهائي السلس */
-@keyframes marquee-scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%); /* الانتقال بنسبة النصف تماماً يحقق حلقة تكرار لانهائية غير مرئية الفواصل */
-  }
-}
-
-/* =========================================
-   📱 تحسينات الموبايل (Mobile Responsiveness)
-   ========================================= */
-@media screen and (max-width: 768px) {
-  /* منع الخروج عن الشاشة وإلغاء المسافات الجانبية */
-  html, body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  /* تصحيح الهيدر (شريط التنقل العلوي) */
-  .container {
-    padding: 16px !important;
-    height: auto !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-  }
-
-  /* تصحيح قسم الهيرو */
-  .hero {
-    height: auto !important;
-    min-height: 100vh !important;
-  }
-  .container-parent {
-    padding: 0 0 60px !important;
-  }
-  .container-wrapper {
-    height: auto !important;
-    padding: 20px !important;
-  }
-  .h1 {
-    font-size: 32px !important;
-    line-height: 42px !important;
-    width: 100% !important;
-  }
-  
-  .div3 {
-    font-size: 16px !important;
-    line-height: 24px !important;
-    width: 100% !important;
-  }
-
-  .wrapper {
-    margin-top: -30px !important;
-    padding: 0 16px !important;
-  }
-
-  /* قسم الأرقام والإحصائيات */
-  .high-converting-landing-page-inner {
-    padding: 32px 16px !important;
-  }
-  .container-group {
-    flex-direction: column !important;
-    gap: 20px !important;
-    padding: 0 !important;
-  }
-  .container5, .container7, .container9 {
-    width: 100% !important;
-  }
-
-  /* قسم التحديات والمشاكل */
-  .group-div {
-    width: 100% !important;
-  }
-  .main2 {
-    flex-direction: column !important;
-    padding: 32px 16px !important;
-    gap: 32px !important;
-  }
-  .frame-parent {
-    width: 100% !important;
-    padding-left: 0 !important;
-  }
-  .div6 {
-    font-size: 24px !important;
-    width: 100% !important;
-  }
-  .smart-solution {
-    width: 100% !important;
-    padding: 16px !important;
-  }
-  .div7 {
-    font-size: 16px !important;
-  }
-
-  /* قسم المميزات (ليش تختارنا) */
-  .container-parent6 {
-    flex-direction: column !important;
-    gap: 24px !important;
-  }
-  .container22 {
-    width: 100% !important;
-  }
-  .container21 {
-    padding: 32px 16px !important;
-  }
-
-  /* قسم خطوات العمل */
-  .how-it-works {
-    padding: 32px 16px !important;
-  }
-  .how-to-work {
-    flex-direction: column-reverse !important;
-    gap: 32px !important;
-  }
-  .frame-group {
-    width: 100% !important;
-    flex-direction: column !important;
-  }
-  .workflow {
-    width: 100% !important;
-  }
-  .h24 {
-    font-size: 32px !important;
-  }
-
-  /* قسم الخدمات (الخدمات وخدمات أخرى) */
-  .resultssection, .resultssection2 {
-    padding: 32px 0 !important;
-  }
-  .container34 {
-    flex-direction: column !important;
-    padding: 0 16px !important;
-    gap: 24px !important;
-  }
-  .container35, .text-container {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-
-  /* تقليل أحجام بطاقات الخدمات للموبايل لتناسب الشاشة وتمنع الفراغ */
-  .container36, .container37, .container38, .container39, .container40, .container41, .container42, .container43 {
-    width: 240px !important;
-    padding: 150px 16px 24px !important;
-  }
-
-  /* قسم آراء العملاء */
-  .resultssection3 {
-    padding: 32px 16px !important;
-  }
-  .client-photos {
-    flex-direction: column !important;
-    gap: 16px !important;
-  }
-  .client-photos img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 300px !important;
-    margin: 0 auto !important;
-  }
-
-  /* قسم السيارات المباعة */
-  .resultssection4 {
-    padding: 32px 0 !important;
-  }
-  .container52 {
-    width: 100% !important;
-    padding: 0 16px !important;
-  }
-  
-  /* قسم نتائج الحملات */
-  .resultssection5 {
-    padding: 32px 0 !important;
-  }
-  .campaign-data {
-    flex-direction: column !important;
-    padding: 0 16px !important;
-    gap: 16px !important;
-  }
-  .campaign-data img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  /* قسم اتخاذ الإجراء (تواصل معنا) */
-  .call-to-action {
-    padding: 32px 16px !important;
-  }
-  .container54 {
-    width: 100% !important;
-    padding: 32px 16px !important;
-  }
-  .div21 {
-    font-size: 28px !important;
-    line-height: 40px !important;
-  }
-
-  /* الفوتر (تذييل الصفحة) */
-  .footer {
-    padding: 32px 16px !important;
-  }
-  .container57 {
-    flex-direction: column !important;
-    gap: 24px !important;
-    text-align: center !important;
-  }
-  .social-links {
-    justify-content: center !important;
-  }
-}
-
-/* إخفاء أي فقاعات نصية قد تظهر بجانب زر الواتساب العائم */
 .whatsapp-float::before,
 .whatsapp-float::after {
   display: none !important;
 }
-/* لا نقوم بإخفاء محتوى الـ SVG الداخلي فقط النص */
 .whatsapp-float span,
 .whatsapp-float div {
   display: none !important;
